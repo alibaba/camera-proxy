@@ -1,0 +1,28 @@
+{
+	"compilerOptions": {
+		"outDir": "./dist/",
+		"noImplicitAny": false,
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"target": "es6",
+		"esModuleInterop": true,
+		"preserveConstEnums": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"removeComments": false,
+		"declaration": true,
+		"baseUrl": "."
+	},
+	"exclude": ["node_modules", "dist", "demo"],
+	"typedocOptions": {
+		"mode": "file",
+		"out": "docs",
+		"theme": "markdown",
+		"hideGenerator": true,
+		"excludeProtected": true,
+		"excludePrivate": true,
+		"excludeNotExported": true,
+		"excludeExternals": true,
+		"exclude": ["*/util.ts", "*/MQClient.ts"]
+	}
+}

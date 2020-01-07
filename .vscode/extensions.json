@@ -1,0 +1,17 @@
+{
+	"recommendations": [
+		"formulahendry.auto-close-tag",
+		"steoates.autoimport",
+		"formulahendry.auto-rename-tag",
+		"eamodio.gitlens",
+		"donjayamanne.githistory",
+		"eg2.vscode-npm-script",
+		"dbaeumer.vscode-eslint",
+		"msjsdiag.debugger-for-chrome",
+		"cssho.vscode-svgviewer",
+		"ionutvmi.path-autocomplete",
+		"shinnn.stylelint",
+		"naumovs.color-highlight",
+		"esbenp.prettier-vscode"
+	]
+}
