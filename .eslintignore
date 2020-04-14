@@ -2,3 +2,4 @@ demo
 src/_old
 src/util
 **/bin/**
+dist
