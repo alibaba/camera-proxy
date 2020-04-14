@@ -48,7 +48,7 @@
   },
   "scripts": {
     "compile": "./node_modules/typescript/bin/tsc",
-    "dist": "webpack --config webpack.config.prod.js && npm run test",
+    "dist": "npm run compile && webpack --config webpack.config.prod.js && npm run test",
     "start": "node --max-old-space-size=8192 server.js",
     "test": "jest",
     "autofix": "eslint --fix ./",
