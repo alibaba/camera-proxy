@@ -23,7 +23,7 @@ import {
 } from './interface'
 import { clamp } from './util'
 
-// three 不能tree shaking，因此需要把需要的模块单独拿出来
+// three 不能 tree shaking，因此需要把需要的模块单独拿出来
 import { Euler } from 'three/src/math/Euler'
 import { Vector3 } from 'three/src/math/Vector3'
 
@@ -69,7 +69,7 @@ const defaultProps = {
 	orientation: 'right',
 	ratio: 1,
 	states: defaultGeographicStates,
-	onUpdate: camProxy => {},
+	onUpdate: (camProxy) => {},
 }
 
 /**
@@ -302,10 +302,7 @@ export class CameraProxy {
 			this._rotationEuler.z = this.geoStates.rotation
 			this._rotationEuler.x = this.geoStates.pitch
 
-			this._rotationEuler
-				.clone()
-				.reorder('XYZ')
-				.toArray(this.decStates.rotationEuler)
+			this._rotationEuler.clone().reorder('XYZ').toArray(this.decStates.rotationEuler)
 			this.decStates.rotationEuler.pop()
 
 			// => distance
@@ -582,13 +579,13 @@ export class CameraProxy {
 	}
 
 	// 根据distance更新zoom
-	private _getZoom(distance, canvasHeight, fov, ratio) {
+	protected _getZoom(distance, canvasHeight, fov, ratio) {
 		const scale = (K * canvasHeight) / Math.tan(fov / _RAD2ANGEL / 2) / distance
 		return Math.log2(scale / ratio)
 	}
 
 	// 根据zoom更新distance
-	private _getDistance(zoom, canvasHeight, fov, ratio) {
+	protected _getDistance(zoom, canvasHeight, fov, ratio) {
 		const scale = Math.pow(2, zoom) * ratio
 		let h = (K * canvasHeight) / scale / Math.tan(fov / _RAD2ANGEL / 2)
 		// scale == 1时，全幅地图是256*256
@@ -606,4 +603,4 @@ const _RAD2ANGEL = 180 / Math.PI
 const K = 100000 * 0.78125
 
 // polyfill
-Math.log2 = Math.log2 || (x => Math.log(x) * Math.LOG2E)
+Math.log2 = Math.log2 || ((x) => Math.log(x) * Math.LOG2E)

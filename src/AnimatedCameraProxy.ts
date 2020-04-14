@@ -56,9 +56,10 @@ export class AnimatedCameraProxy extends CameraProxy {
 
 			this.onUpdate(this)
 
+			// TODO: Its kind of messy here.
 			// this.inertGeoStates = JSON.parse(JSON.stringify(this.geoStates))
 			// JS中可以直接这样做反射
-			this.update = selfBase => {
+			this.update = (selfBase) => {
 				if (selfBase) {
 					super.update(true)
 				} else {
@@ -263,11 +264,71 @@ export class AnimatedCameraProxy extends CameraProxy {
 		}
 	}
 
+	public setGeographicStatesEase2(
+		states: GeographicStates,
+		duration = 1000,
+		easeF = easeSin01,
+		onStart: () => void = null,
+		onEnd: () => void = null
+	) {
+		const prevStates = this.getGeographicStates()
+		const prevDistance = this.decStates.distance
+		const targetDistance = this._getDistance(states.zoom, this.canvasHeight, this.fov, this.ratio)
+
+		const track = this.timeline.addTrack({
+			id: '相机缓动',
+			startTime: this.timeline.currentTime,
+			duration,
+			onStart: () => {
+				this.easingLock = true
+				if (onStart) {
+					onStart()
+				}
+			},
+			onUpdate: (t, p) => {
+				// zoom 按照屏幕像素尺寸运动
+				const middleZoom = lerp(prevStates.zoom, states.zoom, p)
+				// 换算回距离
+				const middleDistance = this._getDistance(
+					middleZoom,
+					this.canvasHeight,
+					this.fov,
+					this.ratio
+				)
+				// 换算成percent
+				const distancePercent = (middleDistance - prevDistance) / (targetDistance - prevDistance)
+				const p2 = prevStates.zoom === states.zoom ? p : distancePercent
+
+				const middleStates: GeographicStates = {
+					center: lerp(prevStates.center, states.center, p2),
+					pitch: lerp(prevStates.pitch, states.pitch, p2),
+					rotation: lerp(prevStates.rotation, states.rotation, p2),
+					zoom: lerp(prevStates.zoom, states.zoom, p),
+				}
+
+				this.setGeographicStates(middleStates)
+			},
+			onEnd: () => {
+				this.easingLock = false
+				if (onEnd) {
+					onEnd()
+				}
+			},
+			easing: easeF || easeSin01,
+		})
+
+		// 让用户可以在外部控制立刻停掉这个动画
+		return () => {
+			track.alive = false // 立刻停掉动画
+			track.onEnd() // 手动收尾
+		}
+	}
+
 	/**
 	 * 清理
 	 */
 	public dispose() {
-		this.update = selfBase => {}
+		this.update = (selfBase) => {}
 		this.inertTrack && (this.inertTrack.alive = false)
 		super.dispose()
 	}
