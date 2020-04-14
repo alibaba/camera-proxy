@@ -68,7 +68,14 @@ var config = {
 			{
 				test: /\.ts$/,
 				include: /src|demo/,
-				use: 'ts-loader',
+				use: {
+					loader: 'ts-loader',
+					options: {
+						compilerOptions: {
+							rootDir: './',
+						},
+					},
+				},
 			},
 		],
 	},
