@@ -1,21 +1,24 @@
 {
   "name": "camera-proxy",
   "version": "0.1.0-beta",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/camera-proxy.min.js",
+  "types": "dist/modules/index.d.ts",
   "author": "Simon <gaomeng1900@gamil.com>",
   "description": "Cross-platform 3D Camera Controller | 通用相机系统",
   "homepage": "https://github.com/alibaba/camera-proxy",
   "license": "MIT",
   "files": [
     "package.json",
+    "LICENSE",
     "README.md",
-    "dist/*"
+    "dist/**",
+    "src/*"
   ],
   "dependencies": {
     "ani-timeline": "1.2.18-beta",
-    "@types/hammerjs": "^2.0.36",
     "paho-mqtt": "1.0.3",
+    "three": ">=0.94.0",
+    "@types/hammerjs": "^2.0.36",
     "hammerjs": "^2.0.8"
   },
   "devDependencies": {
@@ -44,6 +47,7 @@
     "webpack-dev-server": "^3.2.1"
   },
   "scripts": {
+    "compile": "./node_modules/typescript/bin/tsc",
     "dist": "webpack --config webpack.config.prod.js && npm run test",
     "start": "node --max-old-space-size=8192 server.js",
     "test": "jest",

@@ -7,7 +7,12 @@ process.noDeprecation = true
 
 var config = {
 	entry: {
-		index: ['./src/index.ts'],
+		'camera-proxy.min': ['./src/index.ts'],
+		// AnimatedCameraProxy: ['./src/AnimatedCameraProxy.ts'],
+		// CameraProxy: ['./src/CameraProxy.ts'],
+		// PointerControl: ['./src/PointerControl.ts'],
+		// RemoteSyncer: ['./src/RemoteSyncer.ts'],
+		// TouchControl: ['./src/TouchControl.ts'],
 	},
 	output: {
 		path: path.resolve(__dirname, 'dist'),
@@ -45,6 +50,7 @@ var config = {
 		new webpack.NoEmitOnErrorsPlugin(), // 出错时不发布
 		new BundleAnalyzerPlugin(),
 	],
+	devtool: 'source-map',
 	resolve: {
 		alias: {
 			src: path.join(__dirname, 'src'),
@@ -56,7 +62,14 @@ var config = {
 			{
 				test: /\.ts$/,
 				include: /src|demo/,
-				use: 'ts-loader',
+				use: {
+					loader: 'ts-loader',
+					options: {
+						compilerOptions: {
+							declaration: false,
+						},
+					},
+				},
 			},
 		],
 	},

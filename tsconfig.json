@@ -1,6 +1,5 @@
 {
 	"compilerOptions": {
-		"outDir": "./dist/",
 		"noImplicitAny": false,
 		"module": "commonjs",
 		"moduleResolution": "node",
@@ -11,7 +10,9 @@
 		"sourceMap": true,
 		"removeComments": false,
 		"declaration": true,
-		"baseUrl": "."
+		"baseUrl": ".",
+		"outDir": "./dist/modules/",
+		"rootDir": "./src/"
 	},
 	"exclude": ["node_modules", "dist", "demo"],
 	"typedocOptions": {
