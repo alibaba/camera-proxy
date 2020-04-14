@@ -27,15 +27,15 @@
 
 ###  constructor
 
-\+ **new RemoteSyncer**(`props`: RemoteSyncerProps): *[RemoteSyncer](remotesyncer.md)*
+\+ **new RemoteSyncer**(`props`: [RemoteSyncerProps](../interfaces/remotesyncerprops.md)): *[RemoteSyncer](remotesyncer.md)*
 
-*Defined in [RemoteSyncer.ts:31](https://github.com/alibaba/camera-proxy/blob/c129bee/src/RemoteSyncer.ts#L31)*
+*Defined in [RemoteSyncer.ts:31](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/RemoteSyncer.ts#L31)*
 
 **Parameters:**
 
 Name | Type |
 ------ | ------ |
-`props` | RemoteSyncerProps |
+`props` | [RemoteSyncerProps](../interfaces/remotesyncerprops.md) |
 
 **Returns:** *[RemoteSyncer](remotesyncer.md)*
 
@@ -45,7 +45,7 @@ Name | Type |
 
 • **active**: *boolean*
 
-*Defined in [RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/c129bee/src/RemoteSyncer.ts#L28)*
+*Defined in [RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/RemoteSyncer.ts#L28)*
 
 ___
 
@@ -53,15 +53,15 @@ ___
 
 • **camera**: *[CameraProxy](cameraproxy.md)*
 
-*Defined in [RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/c129bee/src/RemoteSyncer.ts#L24)*
+*Defined in [RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/RemoteSyncer.ts#L24)*
 
 ___
 
 ###  config
 
-• **config**: *RemoteSyncerProps*
+• **config**: *[RemoteSyncerProps](../interfaces/remotesyncerprops.md)*
 
-*Defined in [RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/c129bee/src/RemoteSyncer.ts#L23)*
+*Defined in [RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/RemoteSyncer.ts#L23)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **mqclient**: *MQClient*
 
-*Defined in [RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/c129bee/src/RemoteSyncer.ts#L25)*
+*Defined in [RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/RemoteSyncer.ts#L25)*
 
 ## Methods
 
@@ -77,6 +77,6 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/c129bee/src/RemoteSyncer.ts#L94)*
+*Defined in [RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/RemoteSyncer.ts#L94)*
 
 **Returns:** *void*
