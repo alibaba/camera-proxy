@@ -18,6 +18,19 @@ var config = {
 	externals: {
 		'ani-timeline': 'ani-timeline',
 		hammerjs: 'hammerjs',
+		// three: 'three',
+		'three/src/math/Vector3': {
+			commonjs: 'three/src/math/Vector3',
+			commonjs2: 'three/src/math/Vector3',
+			amd: 'three/src/math/Vector3',
+			root: 'THREE.Vector3',
+		},
+		'three/src/math/Euler': {
+			commonjs: 'three/src/math/Euler',
+			commonjs2: 'three/src/math/Euler',
+			amd: 'three/src/math/Euler',
+			root: 'THREE.Euler',
+		},
 		'paho-mqtt': 'paho-mqtt',
 	},
 	mode: 'production',
