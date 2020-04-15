@@ -1,4 +1,6 @@
 import * as THREE from 'three'
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader'
+
 import { AnimatedCameraProxy } from '../src/AnimatedCameraProxy'
 import { PointerControl } from '../src/PointerControl'
 import Timeline from 'ani-timeline'
@@ -27,13 +29,41 @@ scene.add(light1)
 
 scene.add(new THREE.HemisphereLight())
 
-const renderer = new THREE.WebGLRenderer({ antialias: true })
+const renderer = new THREE.WebGLRenderer({ antialias: false })
 renderer.setSize(window.innerWidth, window.innerHeight)
 document.querySelector('#container').appendChild(renderer.domElement)
 var geometry = new THREE.BoxGeometry(1000, 1000, 1000)
 var material = new THREE.MeshNormalMaterial()
 var cube = new THREE.Mesh(geometry, material)
 scene.add(cube)
+
+const loader = new GLTFLoader()
+loader.load(
+	'https://gw.alipayobjects.com/os/bmw-prod/967afabe-c643-43b6-ac5f-936ac0850ce1.gltf',
+	(gltf) => {
+		scene.add(gltf.scene)
+	}
+)
+loader.load(
+	'https://gw.alipayobjects.com/os/bmw-prod/3d4fc8ca-41f5-499e-b061-881455c89be7.gltf',
+	(gltf) => {
+		scene.add(gltf.scene)
+	}
+)
+
+let flag = true
+timeline.addTrack({
+	duration: 3000,
+	loop: true,
+	onStart: () => {
+		if (flag) {
+			cam.setStatesCodeEase('0|1282.228|4201.386|0.000|0.080|0.280|13.088', 2000)
+		} else {
+			cam.setStatesCodeEase('0|-3731.118|-8273.084|0.000|1.240|0.260|16.540', 2000)
+		}
+		flag = !flag
+	},
+})
 
 function animate() {
 	requestAnimationFrame(animate)
@@ -71,3 +101,9 @@ const cam = new AnimatedCameraProxy({
 window['cam'] = cam
 
 // cam.setZoomEase(10, 4000)
+
+const pointerControl = new PointerControl({
+	camera: cam,
+	element: renderer.domElement,
+	// horizontal: false,
+})
