@@ -279,6 +279,22 @@ export class AnimatedCameraProxy extends CameraProxy {
 		}
 	}
 
+	public setStatesCodeEase(
+		statesCode: string,
+		duration = 1000,
+		easeF = easeSin01,
+		onStart: () => void = null,
+		onEnd: () => void = null
+	) {
+		return this.setGeographicStatesEase(
+			this.codeToStates(statesCode),
+			duration,
+			easeF,
+			onStart,
+			onEnd
+		)
+	}
+
 	/**
 	 * 清理
 	 */
