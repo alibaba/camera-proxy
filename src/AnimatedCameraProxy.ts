@@ -227,51 +227,6 @@ export class AnimatedCameraProxy extends CameraProxy {
 		onEnd: () => void = null
 	) {
 		const prevStates = this.getGeographicStates()
-
-		const track = this.timeline.addTrack({
-			id: '相机缓动',
-			startTime: this.timeline.currentTime,
-			duration,
-			onStart: () => {
-				this.easingLock = true
-				if (onStart) {
-					onStart()
-				}
-			},
-			onUpdate: (t, p) => {
-				const middleStates: GeographicStates = {
-					center: lerp(prevStates.center, states.center, p),
-					pitch: lerp(prevStates.pitch, states.pitch, p),
-					rotation: lerp(prevStates.rotation, states.rotation, p),
-					zoom: lerp(prevStates.zoom, states.zoom, p),
-				}
-
-				this.setGeographicStates(middleStates)
-			},
-			onEnd: () => {
-				this.easingLock = false
-				if (onEnd) {
-					onEnd()
-				}
-			},
-			easing: easeF || easeSin01,
-		})
-
-		// 让用户可以在外部控制立刻停掉这个动画
-		return () => {
-			track.alive = false // 立刻停掉动画
-			track.onEnd() // 手动收尾
-		}
-	}
-
-	public setGeographicStatesEase2(
-		states: GeographicStates,
-		duration = 1000,
-		easeF = easeSin01,
-		onStart: () => void = null,
-		onEnd: () => void = null
-	) {
-		const prevStates = this.getGeographicStates()
 		const prevDistance = this.decStates.distance
 		const targetDistance = this._getDistance(states.zoom, this.canvasHeight, this.fov, this.ratio)
 
@@ -301,8 +256,8 @@ export class AnimatedCameraProxy extends CameraProxy {
 
 				const middleStates: GeographicStates = {
 					center: lerp(prevStates.center, states.center, p2),
-					pitch: lerp(prevStates.pitch, states.pitch, p2),
-					rotation: lerp(prevStates.rotation, states.rotation, p2),
+					pitch: lerp(prevStates.pitch, states.pitch, p),
+					rotation: lerp(prevStates.rotation, states.rotation, p),
 					zoom: lerp(prevStates.zoom, states.zoom, p),
 				}
 
