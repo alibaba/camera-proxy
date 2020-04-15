@@ -532,6 +532,14 @@ export class CameraProxy {
 	 * 从状态码更新状态
 	 */
 	public setStatesCode(code: string) {
+		const states = this.codeToStates(code)
+		this.setGeographicStates(states)
+	}
+
+	/**
+	 * 状态吗转换为状态（GeographicStates）
+	 */
+	public codeToStates(code: string): GeographicStates {
 		const statesTuple = code.split('|') as any[]
 		if (statesTuple[0] === '0') {
 			const states: GeographicStates = {
@@ -540,7 +548,7 @@ export class CameraProxy {
 				rotation: statesTuple[5] - 0,
 				zoom: statesTuple[6] - 0,
 			}
-			this.setGeographicStates(states)
+			return states
 		} else {
 			throw new Error('statesCode 版本不支持')
 		}
