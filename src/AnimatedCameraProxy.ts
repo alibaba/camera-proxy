@@ -22,7 +22,7 @@ export class AnimatedCameraProxy extends CameraProxy {
 
 	private onUpdate: Function
 
-	private timeline: Timeline // 缓动需要
+	public timeline: Timeline // 缓动需要
 
 	private inertTrack: Track // 惰性收敛动画
 
@@ -143,7 +143,9 @@ export class AnimatedCameraProxy extends CameraProxy {
 		onStart: () => void = null,
 		onEnd: () => void = null
 	): () => void {
-		// if (this._easingLock) return
+		if (this.easingLock) {
+			console.warn('另一个动画正在控制相机，请主动关闭，以免控制权争夺')
+		}
 
 		// 差值缓动
 		const oldValue = states[key]
