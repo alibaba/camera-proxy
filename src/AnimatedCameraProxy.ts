@@ -221,7 +221,7 @@ export class AnimatedCameraProxy extends CameraProxy {
 		return this._setStateEase(false, this.geoStates, 'rotation', v, duration, easeF, onStart, onEnd)
 	}
 
-	protected setGeographicStatesEase(
+	public setGeographicStatesEase(
 		states: GeographicStates,
 		duration = 1000,
 		easeF = easeSin01,

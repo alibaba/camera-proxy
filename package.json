@@ -1,6 +1,6 @@
 {
   "name": "camera-proxy",
-  "version": "0.1.1-beta",
+  "version": "0.1.2-beta",
   "main": "dist/camera-proxy.min.js",
   "types": "dist/modules/index.d.ts",
   "author": "Simon <gaomeng1900@gamil.com>",
