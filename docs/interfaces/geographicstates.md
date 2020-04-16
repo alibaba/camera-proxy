@@ -23,7 +23,7 @@ Copyright (c) 2017 Alibaba Group Holding Limited
 
 • **center**: *number[]*
 
-*Defined in [interface.ts:13](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/interface.ts#L13)*
+*Defined in [interface.ts:13](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L13)*
 
 视觉焦点 坐标
 {east, north, up} 相对于世界中心地表
@@ -34,7 +34,7 @@ ___
 
 • **pitch**: *number*
 
-*Defined in [interface.ts:18](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/interface.ts#L18)*
+*Defined in [interface.ts:18](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L18)*
 
 倾斜角
 相对于垂直向下方向的倾斜角度
@@ -45,7 +45,7 @@ ___
 
 • **rotation**: *number*
 
-*Defined in [interface.ts:23](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/interface.ts#L23)*
+*Defined in [interface.ts:23](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L23)*
 
 旋转角
 相对于正南方向的顺时针倾斜角度
@@ -56,6 +56,6 @@ ___
 
 • **zoom**: *number*
 
-*Defined in [interface.ts:27](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/interface.ts#L27)*
+*Defined in [interface.ts:27](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L27)*
 
 缩放级别

@@ -31,7 +31,7 @@
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[cameraFOV](cameraproxyprops.md#camerafov)*
 
-*Defined in [CameraProxy.ts:45](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L45)*
+*Defined in [CameraProxy.ts:45](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L45)*
 
 相机FOV
 
@@ -43,7 +43,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[canvasHeight](cameraproxyprops.md#canvasheight)*
 
-*Defined in [CameraProxy.ts:37](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L37)*
+*Defined in [CameraProxy.ts:37](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L37)*
 
 画布尺寸
 
@@ -55,7 +55,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[canvasWidth](cameraproxyprops.md#canvaswidth)*
 
-*Defined in [CameraProxy.ts:41](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L41)*
+*Defined in [CameraProxy.ts:41](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L41)*
 
 画布尺寸
 
@@ -65,7 +65,7 @@ ___
 
 • **inert**? : *boolean | number*
 
-*Defined in [AnimatedCameraProxy.ts:12](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L12)*
+*Defined in [AnimatedCameraProxy.ts:12](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/AnimatedCameraProxy.ts#L12)*
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[limit](cameraproxyprops.md#optional-limit)*
 
-*Defined in [CameraProxy.ts:61](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L61)*
+*Defined in [CameraProxy.ts:61](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L61)*
 
 边界限制
 
@@ -87,7 +87,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[onUpdate](cameraproxyprops.md#optional-onupdate)*
 
-*Defined in [CameraProxy.ts:65](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L65)*
+*Defined in [CameraProxy.ts:65](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L65)*
 
 相机状态需要更新的回调
 
@@ -109,7 +109,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[orientation](cameraproxyprops.md#optional-orientation)*
 
-*Defined in [CameraProxy.ts:57](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L57)*
+*Defined in [CameraProxy.ts:57](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L57)*
 
 坐标系方向，默认右手系（OpenGL/WebGL）
 
@@ -121,7 +121,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[ratio](cameraproxyprops.md#optional-ratio)*
 
-*Defined in [CameraProxy.ts:53](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L53)*
+*Defined in [CameraProxy.ts:53](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L53)*
 
 分辨率缩放
 
@@ -133,7 +133,7 @@ ___
 
 *Inherited from [CameraProxyProps](cameraproxyprops.md).[states](cameraproxyprops.md#optional-states)*
 
-*Defined in [CameraProxy.ts:49](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/CameraProxy.ts#L49)*
+*Defined in [CameraProxy.ts:49](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/CameraProxy.ts#L49)*
 
 初始化状态
 
@@ -143,4 +143,4 @@ ___
 
 • **timeline**: *[Timeline](timeline.md)*
 
-*Defined in [AnimatedCameraProxy.ts:11](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L11)*
+*Defined in [AnimatedCameraProxy.ts:11](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/AnimatedCameraProxy.ts#L11)*

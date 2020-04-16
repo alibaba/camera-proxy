@@ -20,7 +20,7 @@
 
 • **addTrack**: *function*
 
-*Defined in [AnimatedCameraProxy.ts:327](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L327)*
+*Defined in [AnimatedCameraProxy.ts:329](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/AnimatedCameraProxy.ts#L329)*
 
 #### Type declaration:
 
@@ -38,7 +38,7 @@ ___
 
 • **currentTime**: *number*
 
-*Defined in [AnimatedCameraProxy.ts:326](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L326)*
+*Defined in [AnimatedCameraProxy.ts:328](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/AnimatedCameraProxy.ts#L328)*
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 • **destroy**: *function*
 
-*Defined in [AnimatedCameraProxy.ts:328](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L328)*
+*Defined in [AnimatedCameraProxy.ts:330](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/AnimatedCameraProxy.ts#L330)*
 
 #### Type declaration:
 
