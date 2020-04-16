@@ -66,8 +66,10 @@ export class Cameraman {
 		})
 	}
 	stopSwing(reset = true) {
-		this.trackSwing.alive = false // 立刻停掉动画
-		this.trackSwing.onEnd && this.trackSwing.onEnd() // 手动收尾
+		if (this.trackSwing) {
+			this.trackSwing.alive = false // 立刻停掉动画
+			this.trackSwing.onEnd && this.trackSwing.onEnd() // 手动收尾
+		}
 		delete this.trackSwing
 	}
 
