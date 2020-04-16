@@ -23,7 +23,7 @@
 
 • **center**? : *number[][]*
 
-*Defined in [interface.ts:120](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L120)*
+*Defined in [interface.ts:120](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/interface.ts#L120)*
 
 中心坐标限制
 {下限{east, north, up}, 上限{east, north, up}}
@@ -34,7 +34,7 @@ ___
 
 • **pitch**? : *number[]*
 
-*Defined in [interface.ts:110](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L110)*
+*Defined in [interface.ts:110](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/interface.ts#L110)*
 
 倾斜角度限制
 {下限, 上限}
@@ -45,7 +45,7 @@ ___
 
 • **rotation**? : *number[]*
 
-*Defined in [interface.ts:115](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L115)*
+*Defined in [interface.ts:115](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/interface.ts#L115)*
 
 旋转角度限制
 {下限, 上限}
@@ -56,7 +56,7 @@ ___
 
 • **zoom**? : *number[]*
 
-*Defined in [interface.ts:105](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/interface.ts#L105)*
+*Defined in [interface.ts:105](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/interface.ts#L105)*
 
 缩放级别
 {下限, 上限}

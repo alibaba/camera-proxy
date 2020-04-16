@@ -20,7 +20,7 @@
 
 • **camera**: *[CameraProxy](../classes/cameraproxy.md)*
 
-*Defined in [TouchControl.ts:13](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/TouchControl.ts#L13)*
+*Defined in [TouchControl.ts:13](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/TouchControl.ts#L13)*
 
 被控制的 CameraProxy
 
@@ -30,7 +30,7 @@ ___
 
 • **element**: *HTMLElement*
 
-*Defined in [TouchControl.ts:17](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/TouchControl.ts#L17)*
+*Defined in [TouchControl.ts:17](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/TouchControl.ts#L17)*
 
 监控事件的HTML元素
 
@@ -40,7 +40,7 @@ ___
 
 • **horizontal**? : *boolean*
 
-*Defined in [TouchControl.ts:22](https://github.com/alibaba/camera-proxy/blob/69cc03f/src/TouchControl.ts#L22)*
+*Defined in [TouchControl.ts:22](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/TouchControl.ts#L22)*
 
 只在水平（地平面）方向上运动，如果设为false，则在视觉平面上运动
 [=true]

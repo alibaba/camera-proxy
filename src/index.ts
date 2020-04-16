@@ -7,5 +7,6 @@ export * from './AnimatedCameraProxy'
 export * from './PointerControl'
 export * from './TouchControl'
 export * from './RemoteSyncer'
+export * from './Cameraman'
 
 export * from './interface'
