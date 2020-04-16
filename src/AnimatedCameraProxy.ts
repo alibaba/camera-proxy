@@ -219,7 +219,7 @@ export class AnimatedCameraProxy extends CameraProxy {
 		return this._setStateEase(false, this.geoStates, 'rotation', v, duration, easeF, onStart, onEnd)
 	}
 
-	public setGeographicStatesEase(
+	protected setGeographicStatesEase(
 		states: GeographicStates,
 		duration = 1000,
 		easeF = easeSin01,
@@ -279,13 +279,22 @@ export class AnimatedCameraProxy extends CameraProxy {
 		}
 	}
 
+	/**
+	 * 缓动切换相机机位
+	 * @param statesCode 机位状态
+	 * @param duration 缓动时长
+	 * @param easeF 缓动函数
+	 * @param onStart
+	 * @param onEnd
+	 * @return stop {function} 立刻停止缓动动画
+	 */
 	public setStatesCodeEase(
 		statesCode: string,
 		duration = 1000,
 		easeF = easeSin01,
 		onStart: () => void = null,
 		onEnd: () => void = null
-	) {
+	): () => void {
 		return this.setGeographicStatesEase(
 			this.codeToStates(statesCode),
 			duration,

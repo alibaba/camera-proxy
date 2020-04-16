@@ -21,7 +21,7 @@
 
 • **alive**: *boolean*
 
-*Defined in [AnimatedCameraProxy.ts:279](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/AnimatedCameraProxy.ts#L279)*
+*Defined in [AnimatedCameraProxy.ts:320](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L320)*
 
 ___
 
@@ -29,7 +29,7 @@ ___
 
 • **onEnd**: *function*
 
-*Defined in [AnimatedCameraProxy.ts:281](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/AnimatedCameraProxy.ts#L281)*
+*Defined in [AnimatedCameraProxy.ts:322](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L322)*
 
 #### Type declaration:
 
@@ -47,7 +47,7 @@ ___
 
 • **onStart**: *function*
 
-*Defined in [AnimatedCameraProxy.ts:280](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/AnimatedCameraProxy.ts#L280)*
+*Defined in [AnimatedCameraProxy.ts:321](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L321)*
 
 #### Type declaration:
 
@@ -65,7 +65,7 @@ ___
 
 • **onUpdate**: *function*
 
-*Defined in [AnimatedCameraProxy.ts:282](https://github.com/alibaba/camera-proxy/blob/c7a10a1/src/AnimatedCameraProxy.ts#L282)*
+*Defined in [AnimatedCameraProxy.ts:323](https://github.com/alibaba/camera-proxy/blob/b8e0938/src/AnimatedCameraProxy.ts#L323)*
 
 #### Type declaration:
 
