@@ -17,7 +17,7 @@ const defaultProps = {
 }
 
 export class AnimatedCameraProxy extends CameraProxy {
-	protected config: CameraAnimatorProps
+	readonly config: CameraAnimatorProps
 	private inertOutput: GeographicStates
 
 	private onUpdate: Function

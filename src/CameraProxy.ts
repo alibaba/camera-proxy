@@ -24,8 +24,9 @@ import {
 import { clamp } from './util'
 
 // three 不能 tree shaking，因此需要把需要的模块单独拿出来
-import { Euler } from 'three/src/math/Euler'
-import { Vector3 } from 'three/src/math/Vector3'
+// import { Euler } from 'three/src/math/Euler'
+// import { Vector3 } from 'three/src/math/Vector3'
+import { Euler, Vector3 } from 'three'
 
 /**
  * 初始化参数
@@ -79,7 +80,7 @@ const defaultProps = {
  * 内部状态和计算都是以 {east, north, up} 为坐标系，m 为单位。
  */
 export class CameraProxy {
-	protected config: CameraProxyProps
+	readonly config: CameraProxyProps
 	// 地图相机标准状态
 	protected geoStates: GeographicStates
 	// 笛卡尔系相机标准状态
