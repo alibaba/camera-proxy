@@ -2,9 +2,7 @@
  * Copyright (c) 2017 Alibaba Group Holding Limited
  */
 
-import 'paho-mqtt'
-
-const Paho = window['Paho']
+import PahoMQTT from 'paho-mqtt'
 
 export interface MQClientProps {
 	/**
@@ -62,7 +60,7 @@ export class MQClient {
 			this.mqConfig.port = 443
 		}
 
-		this.mqclient = new Paho.MQTT.Client(
+		this.mqclient = new PahoMQTT.Client(
 			this.mqConfig.host,
 			this.mqConfig.port,
 			this.mqConfig.clientId
@@ -111,7 +109,7 @@ export class MQClient {
 		if (!this.connected) {
 			return
 		}
-		const message = new Paho.MQTT.Message(msg)
+		const message = new PahoMQTT.Message(msg)
 		message.destinationName = this.mqConfig.topic
 		this.mqclient.send(message)
 	}
