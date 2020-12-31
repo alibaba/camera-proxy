@@ -26,7 +26,7 @@ const port = 8752
 
 console.log(`Listening 👉  http://${ip}:${port} 👈 \n`)
 
-app.listen(port, '0.0.0.0', err => {
+app.listen(port, '0.0.0.0', (err) => {
 	if (err) {
 		console.log(err)
 	}
@@ -38,16 +38,16 @@ const compiler = webpack(config)
 
 // set dev_option
 var devOption = {
-	stats: {
-		entrypoints: false,
-		modules: false,
-		colors: true,
-		version: true,
-		warnings: false,
-		hash: false,
-		builtAt: false,
-		performance: false,
-	},
+	// stats: {
+	// 	entrypoints: false,
+	// 	modules: false,
+	// 	colors: true,
+	// 	version: true,
+	// 	warnings: false,
+	// 	hash: false,
+	// 	builtAt: false,
+	// 	performance: false,
+	// },
 	publicPath: config.output.publicPath, // 静态文件位置
 	headers: {
 		'Access-Control-Allow-Origin': '*',
@@ -61,7 +61,7 @@ app.use(comp())
 app.use(require('webpack-dev-middleware')(compiler, devOption))
 // app.use(require('webpack-hot-middleware')(compiler))
 
-app.use(function(req, res, next) {
+app.use(function (req, res, next) {
 	req.headers['if-none-match'] = 'no-match-for-this'
 	next()
 })

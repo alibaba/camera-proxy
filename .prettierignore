@@ -3,3 +3,5 @@ src/util
 **/bin/**
 
 dist
+
+src/math

@@ -39,7 +39,7 @@ var config = {
 		'paho-mqtt': 'paho-mqtt',
 	},
 	mode: 'production',
-	stats: 'normal',
+	// stats: 'normal',
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {

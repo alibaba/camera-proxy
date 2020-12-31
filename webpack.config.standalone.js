@@ -21,7 +21,7 @@ var config = {
 		globalObject: 'this',
 	},
 	mode: 'production',
-	stats: 'normal',
+	// stats: 'normal',
 	plugins: [
 		new webpack.DefinePlugin({
 			'process.env': {

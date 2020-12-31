@@ -23,10 +23,8 @@ import {
 } from './interface'
 import { clamp } from './util'
 
-// three 不能 tree shaking，因此需要把需要的模块单独拿出来
-// import { Euler } from 'three/src/math/Euler'
-// import { Vector3 } from 'three/src/math/Vector3'
-import { Euler, Vector3 } from 'three'
+import { Euler } from './math/Euler'
+import { Vector3 } from './math/Vector3'
 
 /**
  * 初始化参数
