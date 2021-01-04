@@ -1,6 +1,6 @@
 {
 	"name": "camera-proxy",
-	"version": "0.1.7-beta",
+	"version": "0.1.8-beta",
 	"main": "dist/camera-proxy.min.js",
 	"module": "dist/modules/index.js",
 	"types": "dist/modules/index.d.ts",
@@ -47,7 +47,7 @@
 		"webpack-dev-server": "latest"
 	},
 	"scripts": {
-		"compile": "./node_modules/typescript/bin/tsc",
+		"compile": "./node_modules/typescript/bin/tsc && cp -rf src/math dist/modules/math",
 		"dist": "npm run compile && webpack --config webpack.config.prod.js && webpack --config webpack.config.standalone.js && npm run test",
 		"start": "node --max-old-space-size=8192 server.js",
 		"test": "jest",
