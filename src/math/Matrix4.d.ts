@@ -193,8 +193,8 @@ export class Matrix4 implements Matrix {
 	makePerspective(
 		left: number,
 		right: number,
-		bottom: number,
 		top: number,
+		bottom: number,
 		near: number,
 		far: number
 	): Matrix4;

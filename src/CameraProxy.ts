@@ -25,6 +25,11 @@ import { clamp } from './util'
 
 import { Euler } from './math/Euler'
 import { Vector3 } from './math/Vector3'
+import { Matrix4 } from './math/Matrix4'
+import { Ray } from './math/Ray'
+import { Plane } from './math/Plane'
+
+const DEG2RAD = Math.PI / 180
 
 /**
  * 初始化参数
@@ -184,6 +189,99 @@ export class CameraProxy {
 	public set ratio(value: number) {
 		this._ratio = value
 		this.update()
+	}
+
+	/**
+	 * 宽高比
+	 */
+	public get aspect(): number {
+		return this.canvasWidth / this.canvasHeight
+	}
+
+	public getFrustumCorners(
+		near = true,
+		far = true
+	): { near: Vector3[] | undefined; far: Vector3[] | undefined } {
+		const n = 0.001
+		const top = n * Math.tan(DEG2RAD * 0.5 * this.fov)
+		const height = 2 * top
+		const width = this.aspect * height
+		const left = -0.5 * width
+
+		const _v = new Vector3()
+		const _e = new Euler()
+
+		const projectionMatrix = new Matrix4().makePerspective(
+			left,
+			left + width,
+			top,
+			top - height,
+			n,
+			99999999
+		)
+		const projectionMatrixInverse = projectionMatrix.clone().invert()
+
+		const res = {
+			near: undefined,
+			far: undefined,
+		}
+
+		// Corners in view space (-1~1, -1~1), needs to apply inverse(mvp) transformation to get world space coords
+		const states = this.getCartesianStates()
+		if (near) {
+			const nearCorners = (res.near = [
+				new Vector3(-1, -1, -1),
+				new Vector3(-1, 1, -1),
+				new Vector3(1, -1, -1),
+				new Vector3(1, 1, -1),
+			])
+			nearCorners.forEach((v) =>
+				v
+					.applyMatrix4(projectionMatrixInverse)
+					.applyEuler(_e.fromArray(states.rotationEuler))
+					.add(_v.fromArray(states.position))
+			)
+		}
+
+		if (far) {
+			const farCorners = (res.far = [
+				new Vector3(-1, -1, 1),
+				new Vector3(-1, 1, 1),
+				new Vector3(1, -1, 1),
+				new Vector3(1, 1, 1),
+			])
+			farCorners.forEach((v) =>
+				v
+					.applyMatrix4(projectionMatrixInverse)
+					.applyEuler(_e.fromArray(states.rotationEuler))
+					.add(_v.fromArray(states.position))
+			)
+		}
+
+		return res
+	}
+
+	public getGeoViewCoords(): Vector3[] {
+		const frustumCorners = this.getFrustumCorners(true, false)
+		const states = this.getCartesianStates()
+		const _v = new Vector3()
+		const camPos = _v.clone().fromArray(states.position)
+		const rays = frustumCorners.near.map(
+			(corner) => new Ray(camPos, _v.clone().subVectors(corner, camPos).normalize())
+		)
+		const xyPlane = new Plane(new Vector3(0, 0, 1), Number.EPSILON)
+		return rays.map((ray) => {
+			const target = new Vector3()
+			const denominator = xyPlane.normal.dot(ray.direction)
+			if (denominator > 0) {
+				return target.set(Infinity, Infinity, 0).multiply(ray.direction)
+			}
+			if (ray.intersectPlane(xyPlane, target)) {
+				return target
+			} else {
+				return undefined
+			}
+		})
 	}
 
 	// 状态整理与多种语义之间的转换

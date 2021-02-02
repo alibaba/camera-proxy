@@ -16,10 +16,10 @@
 		"src/*"
 	],
 	"dependencies": {
-		"ani-timeline": "1.2.18-beta",
-		"paho-mqtt": "1.1.0",
 		"@types/hammerjs": "^2.0.36",
-		"hammerjs": "^2.0.8"
+		"ani-timeline": "1.2.18-beta",
+		"hammerjs": "^2.0.8",
+		"paho-mqtt": "1.1.0"
 	},
 	"devDependencies": {
 		"babel-eslint": "^10.0.1",
