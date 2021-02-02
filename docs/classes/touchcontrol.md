@@ -22,7 +22,7 @@
 
 \+ **new TouchControl**(`props`: [TouchControlProps](../interfaces/touchcontrolprops.md)): *[TouchControl](touchcontrol.md)*
 
-*Defined in [TouchControl.ts:32](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/TouchControl.ts#L32)*
+*Defined in [src/TouchControl.ts:32](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/TouchControl.ts#L32)*
 
 **Parameters:**
 
@@ -38,6 +38,6 @@ Name | Type |
 
 ▸ **dispose**(): *void*
 
-*Defined in [TouchControl.ts:147](https://github.com/alibaba/camera-proxy/blob/64e5dd0/src/TouchControl.ts#L147)*
+*Defined in [src/TouchControl.ts:147](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/TouchControl.ts#L147)*
 
 **Returns:** *void*
