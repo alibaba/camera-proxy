@@ -198,7 +198,7 @@ export class CameraProxy {
 		return this.canvasWidth / this.canvasHeight
 	}
 
-	public getFrustumCorners(
+	private getFrustumCorners(
 		near = true,
 		far = true
 	): { near: Vector3[] | undefined; far: Vector3[] | undefined } {

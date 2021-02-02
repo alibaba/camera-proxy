@@ -1,6 +1,6 @@
 {
 	"name": "camera-proxy",
-	"version": "0.1.8-beta",
+	"version": "0.1.9-beta",
 	"main": "dist/camera-proxy.min.js",
 	"module": "dist/modules/index.js",
 	"types": "dist/modules/index.d.ts",

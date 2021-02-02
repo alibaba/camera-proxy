@@ -1,7 +1,7 @@
 import { Vector3 } from './Vector3';
-import { Sphere } from './Sphere';
+// import { Sphere } from './Sphere';
 import { Plane } from './Plane';
-import { Box3 } from './Box3';
+// import { Box3 } from './Box3';
 import { Matrix4 } from './Matrix4';
 
 export class Ray {
@@ -33,13 +33,13 @@ export class Ray {
 		optionalPointOnRay?: Vector3,
 		optionalPointOnSegment?: Vector3
 	): number;
-	intersectSphere( sphere: Sphere, target: Vector3 ): Vector3 | null;
-	intersectsSphere( sphere: Sphere ): boolean;
+	// intersectSphere( sphere: Sphere, target: Vector3 ): Vector3 | null;
+	// intersectsSphere( sphere: Sphere ): boolean;
 	distanceToPlane( plane: Plane ): number;
 	intersectPlane( plane: Plane, target: Vector3 ): Vector3 | null;
 	intersectsPlane( plane: Plane ): boolean;
-	intersectBox( box: Box3, target: Vector3 ): Vector3 | null;
-	intersectsBox( box: Box3 ): boolean;
+	// intersectBox( box: Box3, target: Vector3 ): Vector3 | null;
+	// intersectsBox( box: Box3 ): boolean;
 	intersectTriangle(
 		a: Vector3,
 		b: Vector3,
