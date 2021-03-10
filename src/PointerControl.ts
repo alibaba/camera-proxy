@@ -30,11 +30,17 @@ export interface PointerControlProps {
 	 * [={Infinity}]
 	 */
 	// limit?: Limit
+
+	/**
+	 * 画布缩放比例
+	 */
+	scale?: number
 }
 
 const defaultProps = {
 	scrollCapture: true,
 	horizontal: true,
+	scale: 1.0,
 }
 
 export class PointerControl {
@@ -57,6 +63,11 @@ export class PointerControl {
 	 * 是否锁定zoom（禁止用户控制）
 	 */
 	public zoomLock = false
+
+	/**
+	 * 画布缩放比例
+	 */
+	public scale = 1.0
 
 	private mouse: {
 		x: number
@@ -109,7 +120,7 @@ export class PointerControl {
 			rightClick: false,
 		}
 
-		this._onkeydown = e => {
+		this._onkeydown = (e) => {
 			if (isCtrlKey(e.keyCode)) {
 				this.key[e.keyCode] = true
 				e.preventDefault()
@@ -118,7 +129,7 @@ export class PointerControl {
 		}
 		document.addEventListener('keydown', this._onkeydown, false)
 
-		this._onkeyup = e => {
+		this._onkeyup = (e) => {
 			if (isCtrlKey(e.keyCode)) {
 				this.key[e.keyCode] = false
 				e.preventDefault()
@@ -128,7 +139,7 @@ export class PointerControl {
 		document.addEventListener('keyup', this._onkeyup, false)
 
 		// 避免切除后计数混乱
-		this._onblur = e => {
+		this._onblur = (e) => {
 			this.key = {
 				16: false,
 				17: false,
@@ -140,7 +151,7 @@ export class PointerControl {
 		}
 		window.addEventListener('blur', this._onblur, false)
 
-		this._onmousemove = event => {
+		this._onmousemove = (event) => {
 			if ((this.camera as AnimatedCameraProxy).easingLock) return
 
 			this.mouse.prevX = this.mouse.x
@@ -160,7 +171,7 @@ export class PointerControl {
 					if (!this.pitchLock) this.camera.setPitch(this.camera.pitch - dy * 0.01)
 					if (!this.rotationLock) this.camera.setRotation(this.camera.rotation - dx * 0.01)
 				} else {
-					const scale = Math.pow(2, this.camera.zoom) / 156000
+					const scale = (Math.pow(2, this.camera.zoom) / 156000) * this.scale
 					// this.camera.goRight(-dx / scale, props.horizontal)
 					// this.camera.goUp(dy / scale, props.horizontal)
 					if (!this.centerLock) this.camera.pan(-dx / scale, dy / scale, props.horizontal)
@@ -169,21 +180,21 @@ export class PointerControl {
 		}
 		elm.addEventListener('mousemove', this._onmousemove, false)
 
-		this._onmousedown = event => {
+		this._onmousedown = (event) => {
 			this.mouse.down = true
 			// event.preventDefault()
 			// event.stopPropagation()
 		}
 		elm.addEventListener('mousedown', this._onmousedown, false)
 
-		this._onmouseup = event => {
+		this._onmouseup = (event) => {
 			this.mouse.down = false
 			this.key.rightClick = false
 		}
 		elm.addEventListener('mouseup', this._onmouseup, false)
 
 		// 避免被上层marker影响触发 mouseout
-		this._onmouseleave = event => {
+		this._onmouseleave = (event) => {
 			this.mouse.down = false
 			this.key = {
 				16: false,
@@ -196,7 +207,7 @@ export class PointerControl {
 		}
 		elm.addEventListener('mouseleave', this._onmouseleave, false)
 
-		this._onwheel = e => {
+		this._onwheel = (e) => {
 			if (!props.scrollCapture && !this.inControl) return
 
 			if (!this.zoomLock) camera.setZoom(this.camera.zoom + -e.deltaY / 500)
@@ -207,7 +218,7 @@ export class PointerControl {
 
 		elm.addEventListener('wheel', this._onwheel, false)
 
-		this._oncontextmenu = e => {
+		this._oncontextmenu = (e) => {
 			this.key.rightClick = true
 			// if (this.inControl >= 3) {
 			// 	console.log('DEV::截图')

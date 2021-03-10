@@ -38,7 +38,7 @@ const cam = new CameraProxy({
 	canvasHeight: window.innerHeight,
 	canvasWidth: window.innerWidth,
 
-	onUpdate: cam => {
+	onUpdate: (cam) => {
 		camera.position.fromArray(cam.position)
 		camera.rotation.fromArray(cam.rotationEuler)
 		camera.updateMatrix()
@@ -52,3 +52,4 @@ const pointerControl = new PointerControl({
 })
 
 window['cam'] = cam
+window['control'] = pointerControl
