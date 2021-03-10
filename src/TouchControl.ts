@@ -20,16 +20,27 @@ export interface TouchControlProps {
 	 * [=true]
 	 */
 	horizontal?: boolean
+
+	/**
+	 * 画布缩放比例
+	 */
+	scale?: number
 }
 
 const defaultProps = {
 	horizontal: true,
+	scale: 1.0,
 }
 
 export class TouchControl {
 	private camera: CameraProxy
 	private elm: HTMLElement
 	private hammer: HammerManager
+
+	/**
+	 * 画布缩放比例
+	 */
+	public scale = 1.0
 
 	constructor(props: TouchControlProps) {
 		props = { ...defaultProps, ...props }
@@ -38,7 +49,7 @@ export class TouchControl {
 
 		document.body.addEventListener(
 			'touchmove',
-			function(e) {
+			function (e) {
 				e.preventDefault() //阻止默认的处理方式(阻止下拉滑动的效果)
 			},
 			{ passive: false }
@@ -58,23 +69,23 @@ export class TouchControl {
 		let deltaX = 0
 		let deltaY = 0
 		let panning = false // 尝试 fix hammer的bug
-		this.hammer.on('panstart', e => {
+		this.hammer.on('panstart', (e) => {
 			// console.log('panstart', e)
 			deltaX = e.deltaX
 			deltaY = e.deltaY
 			panning = true
 		})
-		this.hammer.on('panend', e => {
+		this.hammer.on('panend', (e) => {
 			// console.log('panend', e)
 			panning = false
 		})
-		this.hammer.on('pan', e => {
+		this.hammer.on('pan', (e) => {
 			if (panning) {
 				const dx = e.deltaX - deltaX
 				const dy = e.deltaY - deltaY
 				deltaX = e.deltaX
 				deltaY = e.deltaY
-				const scale = Math.pow(2, this.camera.zoom) / 156000
+				const scale = (Math.pow(2, this.camera.zoom) / 156000) * this.scale
 				// this.camera.goRight(-dx / scale, props.horizontal)
 				// this.camera.goUp(dy / scale, props.horizontal)
 				this.camera.pan(-dx / scale, dy / scale, props.horizontal)
@@ -95,14 +106,14 @@ export class TouchControl {
 		let rotateDeltaX = 0
 		let scale = 1
 
-		this.hammer.on('pinchstart', e => {
+		this.hammer.on('pinchstart', (e) => {
 			// rotation = e.rotation
 			pitchDeltaY = e.deltaY
 			rotateDeltaX = e.deltaX
 			scale = e.scale
 		})
 
-		this.hammer.on('pinch', e => {
+		this.hammer.on('pinch', (e) => {
 			// rotation
 
 			const dRotateDeltaX = (e.deltaX - rotateDeltaX) * -0.01
