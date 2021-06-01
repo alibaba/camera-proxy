@@ -54,12 +54,19 @@ export class AnimatedCameraProxy extends CameraProxy {
 				// distance: super.distance,
 			}
 
+			const speed = props.inert === true ? 0.1 : (this.config.inert as number)
+
 			this.onUpdate(this)
 
 			// TODO: Its kind of messy here.
 			// this.inertGeoStates = JSON.parse(JSON.stringify(this.geoStates))
 			// JS中可以直接这样做反射
 			this.update = (selfBase) => {
+				this.inertOutput.center = lerp(this.inertOutput.center, this.geoStates.center, speed)
+				this.inertOutput.pitch = lerp(this.inertOutput.pitch, this.geoStates.pitch, speed)
+				this.inertOutput.rotation = lerp(this.inertOutput.rotation, this.geoStates.rotation, speed)
+				this.inertOutput.zoom = lerp(this.inertOutput.zoom, this.geoStates.zoom, speed)
+
 				if (selfBase) {
 					super.update(true)
 				} else {
@@ -96,21 +103,10 @@ export class AnimatedCameraProxy extends CameraProxy {
 				}
 			}
 
-			const speed = props.inert === true ? 0.1 : (this.config.inert as number)
-
 			this.inertTrack = this.timeline.addTrack({
 				id: 'inert convergence', // 惰性状态收敛
 				duration: Infinity,
 				onUpdate: (t, p) => {
-					this.inertOutput.center = lerp(this.inertOutput.center, this.geoStates.center, speed)
-					this.inertOutput.pitch = lerp(this.inertOutput.pitch, this.geoStates.pitch, speed)
-					this.inertOutput.rotation = lerp(
-						this.inertOutput.rotation,
-						this.geoStates.rotation,
-						speed
-					)
-					this.inertOutput.zoom = lerp(this.inertOutput.zoom, this.geoStates.zoom, speed)
-
 					const oldCode = this.statesCode
 
 					this.update()
