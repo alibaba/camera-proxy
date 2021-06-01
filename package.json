@@ -34,7 +34,7 @@
 		"express": "^4.16.3",
 		"jest": "^24.8.0",
 		"progress-bar-webpack-plugin": "^1.12.1",
-		"pug": "^2.0.4",
+		"pug": ">=3.0.1",
 		"ts-loader": "latest",
 		"ts-node": "latest",
 		"typedoc": "^0.17.4",
