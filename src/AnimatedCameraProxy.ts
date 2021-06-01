@@ -254,7 +254,8 @@ export class AnimatedCameraProxy extends CameraProxy {
 				)
 				// 换算成percent
 				const distancePercent = (middleDistance - prevDistance) / (targetDistance - prevDistance)
-				const p2 = prevStates.zoom === states.zoom ? p : distancePercent
+				const p2 =
+					prevStates.zoom === states.zoom || targetDistance === prevDistance ? p : distancePercent
 
 				const middleStates: GeographicStates = {
 					center: lerp(prevStates.center, states.center, p2),
