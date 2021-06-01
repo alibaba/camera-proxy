@@ -12,6 +12,10 @@
 
 * [constructor](touchcontrol.md#constructor)
 
+### Properties
+
+* [scale](touchcontrol.md#scale)
+
 ### Methods
 
 * [dispose](touchcontrol.md#dispose)
@@ -22,7 +26,7 @@
 
 \+ **new TouchControl**(`props`: [TouchControlProps](../interfaces/touchcontrolprops.md)): *[TouchControl](touchcontrol.md)*
 
-*Defined in [src/TouchControl.ts:32](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/TouchControl.ts#L32)*
+*Defined in [src/TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/TouchControl.ts#L43)*
 
 **Parameters:**
 
@@ -32,12 +36,22 @@ Name | Type |
 
 **Returns:** *[TouchControl](touchcontrol.md)*
 
+## Properties
+
+###  scale
+
+• **scale**: *number* = 1
+
+*Defined in [src/TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/TouchControl.ts#L43)*
+
+画布缩放比例
+
 ## Methods
 
 ###  dispose
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/TouchControl.ts:147](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/TouchControl.ts#L147)*
+*Defined in [src/TouchControl.ts:158](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/TouchControl.ts#L158)*
 
 **Returns:** *void*

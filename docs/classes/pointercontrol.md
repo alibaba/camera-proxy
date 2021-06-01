@@ -17,6 +17,7 @@
 * [centerLock](pointercontrol.md#centerlock)
 * [pitchLock](pointercontrol.md#pitchlock)
 * [rotationLock](pointercontrol.md#rotationlock)
+* [scale](pointercontrol.md#scale)
 * [zoomLock](pointercontrol.md#zoomlock)
 
 ### Accessors
@@ -33,7 +34,7 @@
 
 \+ **new PointerControl**(`props`: [PointerControlProps](../interfaces/pointercontrolprops.md)): *[PointerControl](pointercontrol.md)*
 
-*Defined in [src/PointerControl.ts:85](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L85)*
+*Defined in [src/PointerControl.ts:96](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L96)*
 
 **Parameters:**
 
@@ -49,7 +50,7 @@ Name | Type |
 
 • **centerLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:47](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L47)*
+*Defined in [src/PointerControl.ts:53](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L53)*
 
 是否锁定center（禁止用户控制）
 
@@ -59,7 +60,7 @@ ___
 
 • **pitchLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:51](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L51)*
+*Defined in [src/PointerControl.ts:57](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L57)*
 
 是否锁定pitch（禁止用户控制）
 
@@ -69,9 +70,19 @@ ___
 
 • **rotationLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:55](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L55)*
+*Defined in [src/PointerControl.ts:61](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L61)*
 
 是否锁定rotation（禁止用户控制）
+
+___
+
+###  scale
+
+• **scale**: *number* = 1
+
+*Defined in [src/PointerControl.ts:70](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L70)*
+
+画布缩放比例
 
 ___
 
@@ -79,7 +90,7 @@ ___
 
 • **zoomLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:59](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L59)*
+*Defined in [src/PointerControl.ts:65](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L65)*
 
 是否锁定zoom（禁止用户控制）
 
@@ -89,7 +100,7 @@ ___
 
 • **get inControl**(): *boolean*
 
-*Defined in [src/PointerControl.ts:240](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L240)*
+*Defined in [src/PointerControl.ts:251](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L251)*
 
 **Returns:** *boolean*
 
@@ -99,6 +110,6 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/PointerControl.ts:252](https://github.com/alibaba/camera-proxy/blob/f61f39b/src/PointerControl.ts#L252)*
+*Defined in [src/PointerControl.ts:263](https://github.com/alibaba/camera-proxy/blob/ce8c685/src/PointerControl.ts#L263)*
 
 **Returns:** *void*
