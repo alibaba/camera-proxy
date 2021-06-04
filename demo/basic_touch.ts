@@ -48,7 +48,7 @@ const cam = new CameraProxy({
 		pitch: [-Math.PI, Math.PI],
 	},
 
-	onUpdate: cam => {
+	onUpdate: (cam) => {
 		camera.position.fromArray(cam.position)
 		camera.rotation.fromArray(cam.rotationEuler)
 		camera.updateMatrix()
