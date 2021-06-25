@@ -1,72 +1,73 @@
 {
-	"name": "camera-proxy",
-	"version": "0.1.12",
-	"main": "dist/camera-proxy.min.js",
-	"module": "dist/modules/index.js",
-	"types": "dist/modules/index.d.ts",
-	"author": "Simon <gaomeng1900@gamil.com>",
-	"description": "Cross-platform 3D Camera Controller | 通用相机系统",
-	"homepage": "https://github.com/alibaba/camera-proxy",
-	"license": "MIT",
-	"files": [
-		"package.json",
-		"LICENSE",
-		"README.md",
-		"dist/**",
-		"src/*"
-	],
-	"dependencies": {
-		"@types/hammerjs": "^2.0.36",
-		"ani-timeline": "1.2.18-beta",
-		"hammerjs": "^2.0.8",
-		"paho-mqtt": "1.1.0"
-	},
-	"devDependencies": {
-		"babel-eslint": "^10.0.1",
-		"compression": "^1.7.3",
-		"dimbin": "^0.3.6",
-		"eslint": "^5.15.1",
-		"eslint-config-standard": "^12.0.0",
-		"eslint-plugin-import": "^2.16.0",
-		"eslint-plugin-node": "^8.0.1",
-		"eslint-plugin-promise": "^4.0.1",
-		"eslint-plugin-standard": "^4.0.0",
-		"express": "^4.16.3",
-		"jest": "^24.8.0",
-		"progress-bar-webpack-plugin": "^1.12.1",
-		"pug": ">=3.0.1",
-		"ts-loader": "latest",
-		"ts-node": "latest",
-		"typedoc": "^0.17.4",
-		"typedoc-plugin-markdown": "^2.2.17",
-		"typescript": "latest",
-		"webpack": "latest",
-		"webpack-bundle-analyzer": "^3.3.2",
-		"webpack-cli": "latest",
-		"webpack-dev-middleware": "latest",
-		"webpack-dev-server": "latest"
-	},
-	"scripts": {
-		"compile": "./node_modules/typescript/bin/tsc && cp -rf src/math dist/modules/math",
-		"dist": "npm run compile && webpack --config webpack.config.prod.js && webpack --config webpack.config.standalone.js && npm run test",
-		"start": "node --max-old-space-size=8192 server.js",
-		"test": "jest",
-		"autofix": "eslint --fix ./",
-		"lint": "eslint ./",
-		"doc": "typedoc",
-		"v": "webpack -v"
-	},
-	"lint-staged": {
-		"src/**/*.js": [
-			"prettier --write",
-			"eslint --fix",
-			"git add"
-		]
-	},
-	"husky": {
-		"hooks": {
-			"post-merge": "tnpm install",
-			"pre-commit": "lint-staged"
-		}
-	}
+  "name": "camera-proxy",
+  "version": "0.1.12",
+  "main": "dist/camera-proxy.min.js",
+  "module": "dist/modules/index.js",
+  "types": "dist/modules/index.d.ts",
+  "author": "Simon <gaomeng1900@gamil.com>",
+  "description": "Cross-platform 3D Camera Controller | 通用相机系统",
+  "homepage": "https://github.com/alibaba/camera-proxy",
+  "license": "MIT",
+  "files": [
+    "package.json",
+    "LICENSE",
+    "README.md",
+    "dist/**",
+    "src/*"
+  ],
+  "dependencies": {
+    "@types/hammerjs": "^2.0.36",
+    "ani-timeline": "1.2.18-beta",
+    "hammerjs": "^2.0.8",
+    "paho-mqtt": "1.1.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "compression": "^1.7.3",
+    "dimbin": "^0.3.6",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "express": "^4.16.3",
+    "jest": "^24.8.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "pug": ">=3.0.1",
+    "three": "^0.129.0",
+    "ts-loader": "latest",
+    "ts-node": "latest",
+    "typedoc": "^0.17.4",
+    "typedoc-plugin-markdown": "^2.2.17",
+    "typescript": "latest",
+    "webpack": "latest",
+    "webpack-bundle-analyzer": "^3.3.2",
+    "webpack-cli": "latest",
+    "webpack-dev-middleware": "latest",
+    "webpack-dev-server": "latest"
+  },
+  "scripts": {
+    "compile": "./node_modules/typescript/bin/tsc && cp -rf src/math dist/modules/math",
+    "dist": "npm run compile && webpack --config webpack.config.prod.js && webpack --config webpack.config.standalone.js && npm run test",
+    "start": "node --max-old-space-size=8192 server.js",
+    "test": "jest",
+    "autofix": "eslint --fix ./",
+    "lint": "eslint ./",
+    "doc": "typedoc",
+    "v": "webpack -v"
+  },
+  "lint-staged": {
+    "src/**/*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "post-merge": "tnpm install",
+      "pre-commit": "lint-staged"
+    }
+  }
 }
