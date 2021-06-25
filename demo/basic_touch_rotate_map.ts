@@ -1,6 +1,6 @@
 import * as THREE from 'three'
 import { CameraProxy } from '../src/CameraProxy'
-import { TouchControl } from '../src/TouchControl'
+import { TouchControlRotate } from '../src/TouchControlRotate'
 
 // THREE basic
 const scene = new THREE.Scene()
@@ -45,7 +45,7 @@ const cam = new CameraProxy({
 	canvasWidth: window.innerWidth,
 
 	limit: {
-		pitch: [-Math.PI, Math.PI],
+		pitch: [Math.PI, Math.PI],
 	},
 
 	onUpdate: (cam) => {
@@ -55,9 +55,10 @@ const cam = new CameraProxy({
 		camera.updateMatrixWorld()
 	},
 })
-const pointerControl = new TouchControl({
+const pointerControl = new TouchControlRotate({
 	camera: cam,
 	element: renderer.domElement,
+	revert: true,
 })
 
 window['cam'] = cam
