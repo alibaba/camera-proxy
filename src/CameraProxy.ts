@@ -69,13 +69,6 @@ export interface CameraProxyProps {
 	onUpdate?: (camProxy: CameraProxy) => void
 }
 
-const defaultProps = {
-	orientation: 'right',
-	ratio: 1,
-	states: defaultGeographicStates,
-	onUpdate: (camProxy) => {},
-}
-
 /**
  * @class CameraProxy
  * 核心类，负责管理相机状态，在 3D 机位和地图机位之间做转换，
@@ -121,7 +114,14 @@ export class CameraProxy {
 	private _centerVec3: Vector3
 
 	constructor(props: CameraProxyProps) {
+		const defaultProps = {
+			orientation: 'right',
+			ratio: 1,
+			states: Object.assign({}, defaultGeographicStates),
+			onUpdate: (camProxy) => {},
+		}
 		this.config = { ...defaultProps, ...props }
+
 		this.useRighthand = this.config.orientation === 'right'
 		// this.usePespective = this.config.cameraType === 'perspective'
 
@@ -130,8 +130,8 @@ export class CameraProxy {
 		this.canvasWidth = this.config.canvasWidth
 		this._ratio = this.config.ratio
 
-		this.geoStates = defaultGeographicStates
-		this.decStates = defaultCartesianStates
+		this.geoStates = Object.assign({}, defaultGeographicStates)
+		this.decStates = Object.assign({}, defaultCartesianStates)
 
 		this.lock = false
 		this.limit = defaultLimit
