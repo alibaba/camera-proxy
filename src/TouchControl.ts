@@ -33,6 +33,15 @@ const defaultProps = {
 }
 
 export class TouchControl {
+	/**
+	 * 是否锁定pan（禁止用户控制）
+	 */
+	public panLock = false
+	/**
+	 * 是否锁定pinch（禁止用户控制）
+	 */
+	public pinchLock = false
+
 	private camera: CameraProxy
 	private elm: HTMLElement
 	private hammer: HammerManager
@@ -80,7 +89,7 @@ export class TouchControl {
 			panning = false
 		})
 		this.hammer.on('pan', (e) => {
-			if (panning) {
+			if (!this.panLock && panning) {
 				const dx = e.deltaX - deltaX
 				const dy = e.deltaY - deltaY
 				deltaX = e.deltaX
@@ -114,8 +123,9 @@ export class TouchControl {
 		})
 
 		this.hammer.on('pinch', (e) => {
-			// rotation
+			if (this.pinchLock) return
 
+			// rotation
 			const dRotateDeltaX = (e.deltaX - rotateDeltaX) * -0.01
 			rotateDeltaX = e.deltaX
 			this.camera.setRotation(this.camera.rotation + dRotateDeltaX)
