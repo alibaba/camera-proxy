@@ -117,7 +117,7 @@ export class CameraProxy {
 		const defaultProps = {
 			orientation: 'right',
 			ratio: 1,
-			states: Object.assign({}, defaultGeographicStates),
+			states: defaultGeographicStates(),
 			onUpdate: (camProxy) => {},
 		}
 		this.config = { ...defaultProps, ...props }
@@ -130,8 +130,8 @@ export class CameraProxy {
 		this.canvasWidth = this.config.canvasWidth
 		this._ratio = this.config.ratio
 
-		this.geoStates = Object.assign({}, defaultGeographicStates)
-		this.decStates = Object.assign({}, defaultCartesianStates)
+		this.geoStates = defaultGeographicStates()
+		this.decStates = defaultCartesianStates()
 
 		this.lock = false
 		this.limit = defaultLimit

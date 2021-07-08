@@ -65,19 +65,23 @@ export function isGeographicStates(sth: States): sth is GeographicStates {
 /**
  * 默认状态
  */
-export const defaultGeographicStates: GeographicStates = {
-	center: [0, 0, 0],
-	pitch: 0.7,
-	rotation: 0.4,
-	zoom: 13.5,
+export function defaultGeographicStates() {
+	return {
+		center: [0, 0, 0],
+		pitch: 0.7,
+		rotation: 0.4,
+		zoom: 13.5,
+	}
 }
 
-export const defaultCartesianStates: CartesianStates = {
-	position: [10, 10, 10],
-	rotationEuler: [0, 0, 0],
-	// reference: [5, 5, 5],
-	// relativePosition: [5, 5, 5],
-	distance: 1000,
+export function defaultCartesianStates() {
+	return {
+		position: [10, 10, 10],
+		rotationEuler: [0, 0, 0],
+		// reference: [5, 5, 5],
+		// relativePosition: [5, 5, 5],
+		distance: 1000,
+	}
 }
 
 // 通用相机参数
