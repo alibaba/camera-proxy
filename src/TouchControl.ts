@@ -56,7 +56,7 @@ export class TouchControl {
 		this.camera = props.camera
 		this.elm = props.element
 
-		document.body.addEventListener(
+		this.elm.addEventListener(
 			'touchmove',
 			function (e) {
 				e.preventDefault() //阻止默认的处理方式(阻止下拉滑动的效果)
