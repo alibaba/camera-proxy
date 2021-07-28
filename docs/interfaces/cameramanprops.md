@@ -18,6 +18,6 @@
 
 • **camera**: *[AnimatedCameraProxy](../classes/animatedcameraproxy.md)*
 
-*Defined in [src/Cameraman.ts:16](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/Cameraman.ts#L16)*
+*Defined in [src/Cameraman.ts:16](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/Cameraman.ts#L16)*
 
 被控制的 CameraProxy

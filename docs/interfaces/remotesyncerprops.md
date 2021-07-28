@@ -23,7 +23,7 @@
 
 • **camera**: *[CameraProxy](../classes/cameraproxy.md)*
 
-*Defined in [src/RemoteSyncer.ts:9](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L9)*
+*Defined in [src/RemoteSyncer.ts:9](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L9)*
 
 ___
 
@@ -31,7 +31,7 @@ ___
 
 • **channel**: *string*
 
-*Defined in [src/RemoteSyncer.ts:13](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L13)*
+*Defined in [src/RemoteSyncer.ts:13](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L13)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **interval**? : *number*
 
-*Defined in [src/RemoteSyncer.ts:11](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L11)*
+*Defined in [src/RemoteSyncer.ts:11](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L11)*
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 • **mqConfig**? : *MQ_CONFIG*
 
-*Defined in [src/RemoteSyncer.ts:14](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L14)*
+*Defined in [src/RemoteSyncer.ts:14](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L14)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **role**: *"master" | "slave"*
 
-*Defined in [src/RemoteSyncer.ts:10](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L10)*
+*Defined in [src/RemoteSyncer.ts:10](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L10)*
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 • **tls**? : *boolean*
 
-*Defined in [src/RemoteSyncer.ts:15](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L15)*
+*Defined in [src/RemoteSyncer.ts:15](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L15)*

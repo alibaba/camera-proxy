@@ -29,7 +29,7 @@
 
 \+ **new RemoteSyncer**(`props`: [RemoteSyncerProps](../interfaces/remotesyncerprops.md)): *[RemoteSyncer](remotesyncer.md)*
 
-*Defined in [src/RemoteSyncer.ts:31](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L31)*
+*Defined in [src/RemoteSyncer.ts:31](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L31)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ Name | Type |
 
 • **active**: *boolean*
 
-*Defined in [src/RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L28)*
+*Defined in [src/RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L28)*
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 • **camera**: *[CameraProxy](cameraproxy.md)*
 
-*Defined in [src/RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L24)*
+*Defined in [src/RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L24)*
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 • **config**: *[RemoteSyncerProps](../interfaces/remotesyncerprops.md)*
 
-*Defined in [src/RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L23)*
+*Defined in [src/RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L23)*
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 • **mqclient**: *MQClient*
 
-*Defined in [src/RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L25)*
+*Defined in [src/RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L25)*
 
 ## Methods
 
@@ -77,6 +77,6 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/RemoteSyncer.ts#L94)*
+*Defined in [src/RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L94)*
 
 **Returns:** *void*

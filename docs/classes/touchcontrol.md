@@ -14,6 +14,8 @@
 
 ### Properties
 
+* [panLock](touchcontrol.md#panlock)
+* [pinchLock](touchcontrol.md#pinchlock)
 * [scale](touchcontrol.md#scale)
 
 ### Methods
@@ -26,7 +28,7 @@
 
 \+ **new TouchControl**(`props`: [TouchControlProps](../interfaces/touchcontrolprops.md)): *[TouchControl](touchcontrol.md)*
 
-*Defined in [src/TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/TouchControl.ts#L43)*
+*Defined in [src/TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L52)*
 
 **Parameters:**
 
@@ -38,11 +40,31 @@ Name | Type |
 
 ## Properties
 
+###  panLock
+
+• **panLock**: *boolean* = false
+
+*Defined in [src/TouchControl.ts:39](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L39)*
+
+是否锁定pan（禁止用户控制）
+
+___
+
+###  pinchLock
+
+• **pinchLock**: *boolean* = false
+
+*Defined in [src/TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L43)*
+
+是否锁定pinch（禁止用户控制）
+
+___
+
 ###  scale
 
 • **scale**: *number* = 1
 
-*Defined in [src/TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/TouchControl.ts#L43)*
+*Defined in [src/TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L52)*
 
 画布缩放比例
 
@@ -52,6 +74,6 @@ Name | Type |
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/TouchControl.ts:158](https://github.com/alibaba/camera-proxy/blob/e1ea04e/src/TouchControl.ts#L158)*
+*Defined in [src/TouchControl.ts:168](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L168)*
 
 **Returns:** *void*
