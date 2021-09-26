@@ -34,7 +34,7 @@
 
 \+ **new PointerControl**(`props`: [PointerControlProps](../interfaces/pointercontrolprops.md)): *[PointerControl](pointercontrol.md)*
 
-*Defined in [src/PointerControl.ts:96](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L96)*
+*Defined in [src/PointerControl.ts:96](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L96)*
 
 **Parameters:**
 
@@ -50,7 +50,7 @@ Name | Type |
 
 • **centerLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:53](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L53)*
+*Defined in [src/PointerControl.ts:53](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L53)*
 
 是否锁定center（禁止用户控制）
 
@@ -60,7 +60,7 @@ ___
 
 • **pitchLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:57](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L57)*
+*Defined in [src/PointerControl.ts:57](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L57)*
 
 是否锁定pitch（禁止用户控制）
 
@@ -70,7 +70,7 @@ ___
 
 • **rotationLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:61](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L61)*
+*Defined in [src/PointerControl.ts:61](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L61)*
 
 是否锁定rotation（禁止用户控制）
 
@@ -80,7 +80,7 @@ ___
 
 • **scale**: *number* = 1
 
-*Defined in [src/PointerControl.ts:70](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L70)*
+*Defined in [src/PointerControl.ts:70](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L70)*
 
 画布缩放比例
 
@@ -90,7 +90,7 @@ ___
 
 • **zoomLock**: *boolean* = false
 
-*Defined in [src/PointerControl.ts:65](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L65)*
+*Defined in [src/PointerControl.ts:65](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L65)*
 
 是否锁定zoom（禁止用户控制）
 
@@ -100,7 +100,7 @@ ___
 
 • **get inControl**(): *boolean*
 
-*Defined in [src/PointerControl.ts:251](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L251)*
+*Defined in [src/PointerControl.ts:251](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L251)*
 
 **Returns:** *boolean*
 
@@ -110,6 +110,6 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/PointerControl.ts:263](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L263)*
+*Defined in [src/PointerControl.ts:263](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L263)*
 
 **Returns:** *void*

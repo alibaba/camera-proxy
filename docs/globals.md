@@ -24,9 +24,7 @@
 * [Limit](interfaces/limit.md)
 * [PointerControlProps](interfaces/pointercontrolprops.md)
 * [RemoteSyncerProps](interfaces/remotesyncerprops.md)
-* [Timeline](interfaces/timeline.md)
 * [TouchControlProps](interfaces/touchcontrolprops.md)
-* [Track](interfaces/track.md)
 
 ### Type aliases
 
@@ -59,7 +57,7 @@
 
 Ƭ **States**: *[GeographicStates](interfaces/geographicstates.md) | [CartesianStates](interfaces/cartesianstates.md)*
 
-*Defined in [src/interface.ts:56](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L56)*
+*Defined in [src/interface.ts:56](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L56)*
 
 ## Variables
 
@@ -67,7 +65,7 @@
 
 • **DEG2RAD**: *number* = Math.PI / 180
 
-*Defined in [src/CameraProxy.ts:32](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/CameraProxy.ts#L32)*
+*Defined in [src/CameraProxy.ts:32](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/CameraProxy.ts#L32)*
 
 ___
 
@@ -75,7 +73,7 @@ ___
 
 • **K**: *number* = 100000 * 0.78125
 
-*Defined in [src/CameraProxy.ts:708](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/CameraProxy.ts#L708)*
+*Defined in [src/CameraProxy.ts:708](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/CameraProxy.ts#L708)*
 
 ___
 
@@ -83,7 +81,7 @@ ___
 
 • **_ANGLE2RAD**: *number* = Math.PI / 180
 
-*Defined in [src/interface.ts:144](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L144)*
+*Defined in [src/interface.ts:144](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L144)*
 
 ___
 
@@ -91,9 +89,9 @@ ___
 
 • **_RAD2ANGEL**: *number* = 180 / Math.PI
 
-*Defined in [src/interface.ts:143](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L143)*
+*Defined in [src/interface.ts:143](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L143)*
 
-*Defined in [src/CameraProxy.ts:705](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/CameraProxy.ts#L705)*
+*Defined in [src/CameraProxy.ts:705](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/CameraProxy.ts#L705)*
 
 ## Functions
 
@@ -101,7 +99,7 @@ ___
 
 ▸ **EMPTY_FUN**(): *void*
 
-*Defined in [src/CameraProxy.ts:704](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/CameraProxy.ts#L704)*
+*Defined in [src/CameraProxy.ts:704](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/CameraProxy.ts#L704)*
 
 **Returns:** *void*
 
@@ -111,7 +109,7 @@ ___
 
 ▸ **defaultCartesianStates**(): *object*
 
-*Defined in [src/interface.ts:77](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L77)*
+*Defined in [src/interface.ts:77](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L77)*
 
 **Returns:** *object*
 
@@ -127,7 +125,7 @@ ___
 
 ▸ **defaultGeographicStates**(): *object*
 
-*Defined in [src/interface.ts:68](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L68)*
+*Defined in [src/interface.ts:68](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L68)*
 
 默认状态
 
@@ -147,7 +145,7 @@ ___
 
 ▸ **easeCruise2**(`p`: any): *number*
 
-*Defined in [src/Cameraman.ts:83](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/Cameraman.ts#L83)*
+*Defined in [src/Cameraman.ts:83](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L83)*
 
 **Parameters:**
 
@@ -163,7 +161,7 @@ ___
 
 ▸ **isCtrlKey**(`keyCode`: any): *boolean*
 
-*Defined in [src/PointerControl.ts:292](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L292)*
+*Defined in [src/PointerControl.ts:292](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L292)*
 
 **Parameters:**
 
@@ -179,7 +177,7 @@ ___
 
 ▸ **isGeographicStates**(`sth`: [States](globals.md#states)): *sth is GeographicStates*
 
-*Defined in [src/interface.ts:61](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L61)*
+*Defined in [src/interface.ts:61](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L61)*
 
 TS 类型保护
 
@@ -197,7 +195,7 @@ Name | Type |
 
 ### ▪ **defaultLimit**: *object*
 
-*Defined in [src/interface.ts:127](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L127)*
+*Defined in [src/interface.ts:127](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L127)*
 
 ###  center
 
@@ -206,25 +204,25 @@ Name | Type |
 		[Infinity, Infinity, Infinity],
 	]
 
-*Defined in [src/interface.ts:131](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L131)*
+*Defined in [src/interface.ts:131](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L131)*
 
 ###  pitch
 
 • **pitch**: *number[]* = [0, Math.PI / 2]
 
-*Defined in [src/interface.ts:129](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L129)*
+*Defined in [src/interface.ts:129](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L129)*
 
 ###  rotation
 
 • **rotation**: *number[]* = [-Infinity, Infinity]
 
-*Defined in [src/interface.ts:130](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L130)*
+*Defined in [src/interface.ts:130](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L130)*
 
 ###  zoom
 
 • **zoom**: *number[]* = [0.5, 25]
 
-*Defined in [src/interface.ts:128](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/interface.ts#L128)*
+*Defined in [src/interface.ts:128](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L128)*
 
 ___
 
@@ -232,46 +230,46 @@ ___
 
 ### ▪ **defaultProps**: *object*
 
-*Defined in [src/AnimatedCameraProxy.ts:15](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/AnimatedCameraProxy.ts#L15)*
+*Defined in [src/AnimatedCameraProxy.ts:17](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/AnimatedCameraProxy.ts#L17)*
 
-*Defined in [src/Cameraman.ts:19](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/Cameraman.ts#L19)*
+*Defined in [src/Cameraman.ts:19](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L19)*
 
-*Defined in [src/PointerControl.ts:40](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L40)*
+*Defined in [src/PointerControl.ts:40](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L40)*
 
-*Defined in [src/RemoteSyncer.ts:18](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L18)*
+*Defined in [src/RemoteSyncer.ts:18](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/RemoteSyncer.ts#L18)*
 
-*Defined in [src/TouchControl.ts:30](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L30)*
+*Defined in [src/TouchControl.ts:30](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/TouchControl.ts#L30)*
 
 ###  horizontal
 
 • **horizontal**: *boolean* = true
 
-*Defined in [src/PointerControl.ts:42](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L42)*
+*Defined in [src/PointerControl.ts:42](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L42)*
 
-*Defined in [src/TouchControl.ts:31](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L31)*
+*Defined in [src/TouchControl.ts:31](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/TouchControl.ts#L31)*
 
 ###  inert
 
 • **inert**: *boolean* = false
 
-*Defined in [src/AnimatedCameraProxy.ts:16](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/AnimatedCameraProxy.ts#L16)*
+*Defined in [src/AnimatedCameraProxy.ts:18](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/AnimatedCameraProxy.ts#L18)*
 
 ###  interval
 
 • **interval**: *number* = 50
 
-*Defined in [src/RemoteSyncer.ts:19](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/RemoteSyncer.ts#L19)*
+*Defined in [src/RemoteSyncer.ts:19](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/RemoteSyncer.ts#L19)*
 
 ###  scale
 
 • **scale**: *number* = 1
 
-*Defined in [src/PointerControl.ts:43](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L43)*
+*Defined in [src/PointerControl.ts:43](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L43)*
 
-*Defined in [src/TouchControl.ts:32](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/TouchControl.ts#L32)*
+*Defined in [src/TouchControl.ts:32](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/TouchControl.ts#L32)*
 
 ###  scrollCapture
 
 • **scrollCapture**: *boolean* = true
 
-*Defined in [src/PointerControl.ts:41](https://github.com/alibaba/camera-proxy/blob/524fbd6/src/PointerControl.ts#L41)*
+*Defined in [src/PointerControl.ts:41](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L41)*

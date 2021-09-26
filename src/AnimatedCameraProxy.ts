@@ -7,6 +7,8 @@ import { States, EasingFunc, GeographicStates, CartesianStates } from './interfa
 
 import { lerp, easeSin01, clamp } from './util'
 
+import { Timeline, Track } from 'ani-timeline'
+
 export interface CameraAnimatorProps extends CameraProxyProps {
 	timeline: Timeline
 	inert?: boolean | number
@@ -173,7 +175,7 @@ export class AnimatedCameraProxy extends CameraProxy {
 		// 让用户可以在外部控制立刻停掉这个动画
 		return () => {
 			track.alive = false // 立刻停掉动画
-			track.onEnd() // 手动收尾
+			track.onEnd(this.timeline.currentTime) // 手动收尾
 		}
 	}
 
@@ -278,7 +280,7 @@ export class AnimatedCameraProxy extends CameraProxy {
 		// 让用户可以在外部控制立刻停掉这个动画
 		return () => {
 			track.alive = false // 立刻停掉动画
-			track.onEnd() // 手动收尾
+			track.onEnd(this.timeline.currentTime) // 手动收尾
 		}
 	}
 
@@ -315,18 +317,4 @@ export class AnimatedCameraProxy extends CameraProxy {
 		this.inertTrack && (this.inertTrack.alive = false)
 		super.dispose()
 	}
-}
-
-// polyfill
-
-interface Track {
-	alive: boolean
-	onStart: (t?) => void
-	onEnd: (t?) => void
-	onUpdate: (t?, p?) => void
-}
-interface Timeline {
-	currentTime: number
-	addTrack: (track: any) => Track
-	destroy: () => void
 }
