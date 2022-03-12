@@ -1,4 +1,4 @@
-# 通用相机模块
+# 通用相机模块 - General 3D Camera Controller for All Render Engines.
 
 ## 安装
 
@@ -22,7 +22,7 @@
 
 `RemoteSyncer` 类提供远程同步控制功能
 
-## Useage
+## Usage
 
 #### 基本流程
 
@@ -46,7 +46,7 @@ const cam = new CameraProxy({
 	canvasHeight: WIDTH,
 	canvasWidth: HEIGHT,
 
-	onUpdate: cam => {
+	onUpdate: (cam) => {
 		// 每次机位发生变化后需要同步导向相机
 		camera.position.fromArray(cam.position)
 		camera.rotation.fromArray(cam.rotationEuler)
