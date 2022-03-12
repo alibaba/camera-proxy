@@ -1,6 +1,6 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 var webpack = require('webpack')
 var path = require('path')
-var ProgressBarPlugin = require('progress-bar-webpack-plugin')
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 
 process.noDeprecation = true
@@ -28,7 +28,6 @@ var config = {
 				NODE_ENV: JSON.stringify('production'),
 			},
 		}),
-		new ProgressBarPlugin({ width: 30 }),
 		new webpack.NoEmitOnErrorsPlugin(), // 出错时不发布
 		// new BundleAnalyzerPlugin(),
 	],

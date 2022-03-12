@@ -692,7 +692,7 @@ export class CameraProxy {
 	// 根据zoom更新distance
 	protected _getDistance(zoom, canvasHeight, fov, ratio) {
 		const scale = Math.pow(2, zoom) * ratio
-		let h = (K * canvasHeight) / scale / Math.tan(fov / _RAD2ANGEL / 2)
+		const h = (K * canvasHeight) / scale / Math.tan(fov / _RAD2ANGEL / 2)
 		// scale == 1时，全幅地图是256*256
 		return h
 	}

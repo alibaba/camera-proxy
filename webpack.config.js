@@ -1,7 +1,7 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 var webpack = require('webpack')
 var path = require('path')
 var fs = require('fs')
-var ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 process.noDeprecation = true
 
@@ -56,7 +56,6 @@ var config = {
 
 	mode: 'development',
 	plugins: [
-		new ProgressBarPlugin({ width: 30 }),
 		new webpack.NoEmitOnErrorsPlugin(), // 出错时不发布
 	],
 	resolve: {

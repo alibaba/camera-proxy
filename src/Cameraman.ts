@@ -1,5 +1,5 @@
 /**
- * Camera Oparator.
+ * Camera Operator.
  * Advanced Cinematic Camera Movements.
  */
 
@@ -31,6 +31,9 @@ export class Cameraman {
 	}
 
 	startSwing(theta: number, duration: number, anchor?: number[]) {
+		if (isNaN(theta) || theta === null) throw new Error('theta must be a valid number')
+		if (isNaN(duration) || duration === null) throw new Error('duration must be a valid number')
+
 		if (this.trackSwing) this.stopSwing()
 		if (this.camera.easingLock) console.warn('另一个动画正在控制相机，请主动关闭，以免控制权争夺')
 
@@ -47,7 +50,7 @@ export class Cameraman {
 			},
 			onUpdate: (t, p) => {
 				const alpha = theta * easeCruise2(p)
-				let nextCenter = [...currStates.center]
+				const nextCenter = [...currStates.center]
 				if (anchor) {
 					nextCenter[0] =
 						(currStates.center[0] - anchor[0]) * Math.cos(alpha) -
@@ -59,6 +62,8 @@ export class Cameraman {
 						anchor[1]
 				}
 				const nextRotation = currStates.rotation + alpha
+
+				console.log(duration, t, p)
 
 				this.camera.setCenter(nextCenter)
 				this.camera.setRotation(nextRotation)
