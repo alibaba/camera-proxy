@@ -1,6 +1,6 @@
 {
 	"name": "camera-proxy",
-	"version": "0.1.25-alpha.2",
+	"version": "0.1.25-alpha.3",
 	"main": "dist/camera-proxy.min.js",
 	"module": "dist/modules/index.js",
 	"types": "dist/modules/index.d.ts",
@@ -21,7 +21,7 @@
 		"paho-mqtt": "1.1.0"
 	},
 	"peerDependencies": {
-		"ani-timeline": "1.2.19-* || alpha"
+		"ani-timeline": "alpha"
 	},
 	"devDependencies": {
 		"ani-timeline": "alpha",
