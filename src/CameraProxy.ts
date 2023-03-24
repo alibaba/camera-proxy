@@ -15,11 +15,8 @@ import {
 	defaultGeographicStates,
 	defaultCartesianStates,
 	isGeographicStates,
-	// OrthographicCameraParams,
-	// PerspectiveCameraParams,
 	Limit,
 	defaultLimit,
-	// EasingFunc,
 } from './interface'
 import { clamp } from './util'
 
@@ -103,13 +100,9 @@ export class CameraProxy {
 	 */
 	public lock: boolean
 
-	private useRighthand: boolean // 右手系
-	// private usePespective: boolean // 透视投影
+	private useRightHand: boolean // 右手系
 	protected limit: Limit // 状态边界限制
-	// private distance: number // 相机到视觉中心的距离，使用透视相机时该值体现zoom
-	// private scale: number // 正交相机的宽高范围缩放比，使用正交相机时该值体现zoom
 	// 计算中间变量
-	private _rotationEuler: Euler
 	private _positionVec3: Vector3
 	private _centerVec3: Vector3
 
@@ -118,12 +111,11 @@ export class CameraProxy {
 			orientation: 'right',
 			ratio: 1,
 			states: defaultGeographicStates(),
-			onUpdate: (camProxy) => {},
+			onUpdate: (camProxy: this) => {},
 		}
 		this.config = { ...defaultProps, ...props }
 
-		this.useRighthand = this.config.orientation === 'right'
-		// this.usePespective = this.config.cameraType === 'perspective'
+		this.useRightHand = this.config.orientation === 'right'
 
 		this._fov = this.config.cameraFOV
 		this._canvasHeight = this.config.canvasHeight
@@ -138,10 +130,7 @@ export class CameraProxy {
 		if (this.config.limit) {
 			this.limit = { ...this.limit, ...this.config.limit }
 		}
-		// this.distance = 0
-		// this.scale = 0
-		this._rotationEuler = new Euler()
-		this._rotationEuler.order = 'YZX'
+
 		this._positionVec3 = new Vector3()
 		this._centerVec3 = new Vector3()
 
@@ -323,28 +312,17 @@ export class CameraProxy {
 			// 更新 geoStates[center/zoom/pitch/rotation]
 
 			// => pitch/rotation
-
-			// xyz : this.decStates.rotationEuler
-
-			// yzx : rotation/pitch / this._rotationEuler
-
-			this._rotationEuler.order = 'XYZ'
-			// xyz
-			this._rotationEuler.fromArray(this.decStates.rotationEuler)
-			// this._rotationEuler.x = this.decStates.rotationEuler[0]
-			// this._rotationEuler.y = this.decStates.rotationEuler[1]
-			// this._rotationEuler.z = this.decStates.rotationEuler[2]
-			this._rotationEuler.reorder('YZX')
+			const euler = new Euler(...this.decStates.rotationEuler)
+			const { rotation, pitch } = eulerToRotationPitch(euler)
 
 			// yzx
-			this.geoStates.rotation = this._rotationEuler.z
-			this.geoStates.pitch = this._rotationEuler.x
+			this.geoStates.rotation = rotation
+			this.geoStates.pitch = pitch
 
 			// => center
-
 			this._positionVec3.fromArray(this.decStates.position)
 
-			const cameraDirection = new Vector3(0, 0, -1).applyEuler(this._rotationEuler)
+			const cameraDirection = new Vector3(0, 0, -1).applyEuler(euler)
 
 			// 如果指定了焦距，则按照视线和焦距去寻找焦点（center）
 			if (this.decStates.distance) {
@@ -389,17 +367,9 @@ export class CameraProxy {
 			// 根据 geoStates[center/zoom/pitch/rotation]
 			// 更新 decStates[position/rotationEuler/distance]
 
-			// xyz : this.decStates.rotationEuler
-
-			// yzx : rotation / pitch / this._rotationEuler
-
 			// => rotationEuler
-
-			this._rotationEuler.y = 0
-			this._rotationEuler.z = this.geoStates.rotation
-			this._rotationEuler.x = this.geoStates.pitch
-
-			this._rotationEuler.clone().reorder('XYZ').toArray(this.decStates.rotationEuler)
+			const euler = rotationPitchToEuler(this.geoStates.rotation, this.geoStates.pitch)
+			euler.clone().reorder('XYZ').toArray(this.decStates.rotationEuler)
 			this.decStates.rotationEuler.pop()
 
 			// => distance
@@ -410,16 +380,10 @@ export class CameraProxy {
 				this.ratio
 			)
 
-			// if (this.usePespective) {
-			// } else {
-			// 	// 如果是正交相机，distance是无关紧要的，
-			// 	this.decStates.distance = 1000
-			// }
-
 			// => position
 			this._centerVec3.fromArray(this.geoStates.center)
 
-			const cameraDirection = new Vector3(0, 0, -1).applyEuler(this._rotationEuler)
+			const cameraDirection = new Vector3(0, 0, -1).applyEuler(euler)
 
 			this._positionVec3.subVectors(
 				this._centerVec3,
@@ -521,14 +485,16 @@ export class CameraProxy {
 	 * @param horizontal 是否只在水平面方向运动
 	 */
 	public pan(stepRight, stepUp, horizontal = true) {
+		const euler = new Euler(...this.decStates.rotationEuler)
+
 		if (horizontal) {
 			// 屏幕移动坐标在三维空间中的向量（假设起点为 000，终点为设为<x1, y1, z1>）
 			const panDir = new Vector3(stepRight, stepUp, 0)
-			panDir.applyEuler(this._rotationEuler)
+			panDir.applyEuler(euler)
 
 			// 视线到终点<x1, y1, z1>的方向（不考虑透视，设为<x2, y2, z2>）
-			const camToTargetDir = new Vector3(0, 0, -1).applyEuler(this._rotationEuler)
-			// const upDirection = new Vector3(0, 1, 0).applyEuler(this._rotationEuler)
+			const camToTargetDir = new Vector3(0, 0, -1).applyEuler(euler)
+			// const upDirection = new Vector3(0, 1, 0).applyEuler(euler)
 
 			// let horDir = new Vector2(upDirection.x, upDirection.y)
 			// let horDir = upDirection.projectOnPlane(new Vector3(0, 0, 1))
@@ -546,7 +512,7 @@ export class CameraProxy {
 
 			this.update()
 		} else {
-			const dir = new Vector3(stepRight, stepUp, 0).applyEuler(this._rotationEuler)
+			const dir = new Vector3(stepRight, stepUp, 0).applyEuler(euler)
 			this.decStates.position[0] += dir.x
 			this.decStates.position[1] += dir.y
 			this.decStates.position[2] += dir.z
@@ -661,7 +627,7 @@ export class CameraProxy {
 		// clone
 		const coord = [..._coord]
 		// tansform
-		if (this.useRighthand) {
+		if (this.useRightHand) {
 			// 2dim => 3dim
 			coord[2] = coord[2] || 0
 		} else {
@@ -709,3 +675,33 @@ const K = 100000 * 0.78125
 
 // polyfill
 Math.log2 = Math.log2 || ((x) => Math.log(x) * Math.LOG2E)
+
+/**
+ * 欧拉角转换成 rotation + pitch
+ * @todo there must be a smarter way to do this
+ */
+function eulerToRotationPitch(euler: Euler) {
+	_helperArrow.set(1, 0, 0).applyEuler(euler)
+	const rotation = Math.atan2(_helperArrow.y, _helperArrow.x)
+
+	_helperArrow.set(0, 0, 1).applyEuler(euler)
+	const pitch = Math.atan2(getLength(_helperArrow.x, _helperArrow.y), _helperArrow.z)
+
+	return { rotation, pitch }
+}
+const _helperArrow = new Vector3(0, 0, 0)
+function getLength(x: number, y: number) {
+	return Math.sqrt(x * x + y * y)
+}
+
+/**
+ * rotation + pitch 转换成欧拉角
+ */
+function rotationPitchToEuler(rotation: number, pitch: number) {
+	const euler = new Euler(0, 0, 0, 'YZX')
+	euler.y = 0
+	euler.z = rotation
+	euler.x = pitch
+
+	return euler
+}

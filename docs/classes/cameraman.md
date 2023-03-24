@@ -31,7 +31,7 @@
 
 \+ **new Cameraman**(`props`: [CameramanProps](../interfaces/cameramanprops.md)): *[Cameraman](cameraman.md)*
 
-*Defined in [src/Cameraman.ts:24](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L24)*
+*Defined in [src/Cameraman.ts:24](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L24)*
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ Name | Type |
 
 • **locked**: *boolean*
 
-*Defined in [src/Cameraman.ts:23](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L23)*
+*Defined in [src/Cameraman.ts:23](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L23)*
 
 ## Methods
 
@@ -55,7 +55,7 @@ Name | Type |
 
 ▸ **startCircling**(): *void*
 
-*Defined in [src/Cameraman.ts:76](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L76)*
+*Defined in [src/Cameraman.ts:81](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L81)*
 
 **Returns:** *void*
 
@@ -65,7 +65,7 @@ ___
 
 ▸ **startSliding**(): *void*
 
-*Defined in [src/Cameraman.ts:79](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L79)*
+*Defined in [src/Cameraman.ts:84](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L84)*
 
 **Returns:** *void*
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **startSwing**(`theta`: number, `duration`: number, `anchor?`: number[]): *void*
 
-*Defined in [src/Cameraman.ts:33](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L33)*
+*Defined in [src/Cameraman.ts:33](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L33)*
 
 **Parameters:**
 
@@ -93,7 +93,7 @@ ___
 
 ▸ **stopCircling**(): *void*
 
-*Defined in [src/Cameraman.ts:77](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L77)*
+*Defined in [src/Cameraman.ts:82](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L82)*
 
 **Returns:** *void*
 
@@ -103,7 +103,7 @@ ___
 
 ▸ **stopSliding**(): *void*
 
-*Defined in [src/Cameraman.ts:80](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L80)*
+*Defined in [src/Cameraman.ts:85](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L85)*
 
 **Returns:** *void*
 
@@ -113,7 +113,7 @@ ___
 
 ▸ **stopSwing**(`reset`: boolean): *void*
 
-*Defined in [src/Cameraman.ts:68](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/Cameraman.ts#L68)*
+*Defined in [src/Cameraman.ts:73](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/Cameraman.ts#L73)*
 
 **Parameters:**
 

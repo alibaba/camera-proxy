@@ -20,7 +20,7 @@
 
 • **distance**: *number*
 
-*Defined in [src/interface.ts:50](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L50)*
+*Defined in [src/interface.ts:50](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/interface.ts#L50)*
 
 焦距，视觉焦点离相机的距离，
 - 需要这个值来计算 GeographicStates.center[2]
@@ -35,7 +35,7 @@ ___
 
 • **position**: *number[]*
 
-*Defined in [src/interface.ts:35](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L35)*
+*Defined in [src/interface.ts:35](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/interface.ts#L35)*
 
 相机机位的世界坐标
 
@@ -45,6 +45,6 @@ ___
 
 • **rotationEuler**: *number[]*
 
-*Defined in [src/interface.ts:40](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L40)*
+*Defined in [src/interface.ts:40](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/interface.ts#L40)*
 
 相机自身的旋转角 （欧拉角）

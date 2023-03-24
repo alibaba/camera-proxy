@@ -84,20 +84,6 @@ export function defaultCartesianStates() {
 	}
 }
 
-// 通用相机参数
-// export interface OrthographicCameraParams {
-// 	width: number
-// 	height: number
-// 	near: number
-// 	far: number
-// }
-// export interface PerspectiveCameraParams {
-// 	fov: number
-// 	aspect: number
-// 	near: number
-// 	far: number
-// }
-
 /**
  * 地图相机状态变化范围
  */

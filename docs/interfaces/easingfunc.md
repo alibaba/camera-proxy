@@ -10,7 +10,7 @@
 
 ▸ (`p`: number): *number*
 
-*Defined in [src/interface.ts:138](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/interface.ts#L138)*
+*Defined in [src/interface.ts:124](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/interface.ts#L124)*
 
 **Parameters:**
 

@@ -2,7 +2,6 @@
  * Copyright (c) 2017 Alibaba Group Holding Limited
  */
 
-import { Limit } from './interface'
 import { CameraProxy } from './CameraProxy'
 import { AnimatedCameraProxy } from './AnimatedCameraProxy'
 
@@ -82,7 +81,8 @@ export class PointerControl {
 		18: boolean
 		91: boolean
 		224: boolean
-		rightClick: boolean
+		rightButton: boolean
+		middleButton: boolean
 	}
 
 	private _onmousemove: (event) => void
@@ -117,7 +117,8 @@ export class PointerControl {
 			18: false,
 			91: false,
 			224: false,
-			rightClick: false,
+			rightButton: false,
+			middleButton: false,
 		}
 
 		this._onkeydown = (e) => {
@@ -146,7 +147,8 @@ export class PointerControl {
 				18: false,
 				91: false,
 				224: false,
-				rightClick: false,
+				rightButton: false,
+				middleButton: false,
 			}
 		}
 		window.addEventListener('blur', this._onblur, false)
@@ -156,13 +158,8 @@ export class PointerControl {
 
 			this.mouse.prevX = this.mouse.x
 			this.mouse.prevY = this.mouse.y
-			this.mouse.x =
-				event.clientX +
-				document.body.scrollLeft +
-				document.documentElement.scrollLeft -
-				elm.offsetLeft
-			this.mouse.y =
-				event.clientY + document.body.scrollTop + document.documentElement.scrollTop - elm.offsetTop
+			this.mouse.x = event.clientX
+			this.mouse.y = event.clientY
 
 			if (this.mouse.down) {
 				const dx = this.mouse.x - this.mouse.prevX
@@ -172,24 +169,31 @@ export class PointerControl {
 					if (!this.rotationLock) this.camera.setRotation(this.camera.rotation - dx * 0.01)
 				} else {
 					const scale = (Math.pow(2, this.camera.zoom) / 156000) * this.scale
-					// this.camera.goRight(-dx / scale, props.horizontal)
-					// this.camera.goUp(dy / scale, props.horizontal)
-					if (!this.centerLock) this.camera.pan(-dx / scale, dy / scale, props.horizontal)
+					if (this.key.middleButton) {
+						if (!this.centerLock) this.camera.pan(-dx / scale, dy / scale, false)
+					} else {
+						if (!this.centerLock) this.camera.pan(-dx / scale, dy / scale, props.horizontal)
+					}
 				}
 			}
 		}
 		elm.addEventListener('mousemove', this._onmousemove, false)
 
-		this._onmousedown = (event) => {
+		this._onmousedown = (event: MouseEvent) => {
 			this.mouse.down = true
-			// event.preventDefault()
-			// event.stopPropagation()
+			if (event.button === 2) {
+				this.key.rightButton = true
+			}
+			if (event.button === 1) {
+				this.key.middleButton = true
+			}
 		}
 		elm.addEventListener('mousedown', this._onmousedown, false)
 
-		this._onmouseup = (event) => {
+		this._onmouseup = (event: MouseEvent) => {
 			this.mouse.down = false
-			this.key.rightClick = false
+			this.key.rightButton = false
+			this.key.middleButton = false
 		}
 		elm.addEventListener('mouseup', this._onmouseup, false)
 
@@ -202,7 +206,8 @@ export class PointerControl {
 				18: false,
 				91: false,
 				224: false,
-				rightClick: false,
+				rightButton: false,
+				middleButton: false,
 			}
 		}
 		elm.addEventListener('mouseleave', this._onmouseleave, false)
@@ -218,31 +223,11 @@ export class PointerControl {
 
 		elm.addEventListener('wheel', this._onwheel, false)
 
+		// 避免与右键动作冲突
+		// @note 不同平台的触发时机不同，windows 在拖动后触发
 		this._oncontextmenu = (e) => {
-			this.key.rightClick = true
-			// if (this.inControl >= 3) {
-			// 	console.log('DEV::截图')
-			// 	const name = `polaris_${Date.now()}.png`
-			// 	const dataURL = props.polaris.capture()
-			// 	const blobURL = window.URL.createObjectURL(dataURItoBlob(dataURL))
-			// 	const a = document.createElement('a')
-			// 	a.download = name
-			// 	a.style.display = 'none'
-			// 	a.href = blobURL
-			// 	a.setAttribute('download', name)
-			// 	// Safari thinks _blank anchor are pop ups. We only want to set _blank
-			// 	// target if the browser does not support the HTML5 download attribute.
-			// 	// This allows you to download files in desktop safari if pop up blocking
-			// 	// is enabled.
-			// 	if (typeof a.download === 'undefined') {
-			// 		a.setAttribute('target', '_blank')
-			// 	}
-			// 	document.body.appendChild(a)
-			// 	a.click()
-			// 	document.body.removeChild(a)
-			// }
 			e.preventDefault()
-			// return false
+			e.stopPropagation()
 		}
 		elm.addEventListener('contextmenu', this._oncontextmenu, false)
 	}
@@ -255,7 +240,7 @@ export class PointerControl {
 			this.key[18] ||
 			this.key[91] ||
 			this.key[224] ||
-			this.key.rightClick
+			this.key.rightButton
 		)
 	}
 

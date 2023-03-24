@@ -22,7 +22,7 @@
 
 • **camera**: *[CameraProxy](../classes/cameraproxy.md)*
 
-*Defined in [src/PointerControl.ts:13](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L13)*
+*Defined in [src/PointerControl.ts:12](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/PointerControl.ts#L12)*
 
 被控制的 CameraProxy
 
@@ -32,7 +32,7 @@ ___
 
 • **element**: *HTMLElement*
 
-*Defined in [src/PointerControl.ts:17](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L17)*
+*Defined in [src/PointerControl.ts:16](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/PointerControl.ts#L16)*
 
 监控事件的HTML元素
 
@@ -42,7 +42,7 @@ ___
 
 • **horizontal**? : *boolean*
 
-*Defined in [src/PointerControl.ts:27](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L27)*
+*Defined in [src/PointerControl.ts:26](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/PointerControl.ts#L26)*
 
 只在水平（地平面）方向上运动，如果设为false，则在视觉平面上运动
 [=true]
@@ -53,7 +53,7 @@ ___
 
 • **scale**? : *number*
 
-*Defined in [src/PointerControl.ts:37](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L37)*
+*Defined in [src/PointerControl.ts:36](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/PointerControl.ts#L36)*
 
 画布缩放比例
 
@@ -63,7 +63,7 @@ ___
 
 • **scrollCapture**? : *boolean*
 
-*Defined in [src/PointerControl.ts:22](https://github.com/alibaba/camera-proxy/blob/b158ca3/src/PointerControl.ts#L22)*
+*Defined in [src/PointerControl.ts:21](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/PointerControl.ts#L21)*
 
 捕获鼠标滚动作为缩放控制，如果设为false则需要按住控制键才能滚动缩放，
 [=true]
