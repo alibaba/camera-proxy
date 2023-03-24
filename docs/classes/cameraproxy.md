@@ -59,7 +59,7 @@
 
 \+ **new CameraProxy**(`props`: [CameraProxyProps](../interfaces/cameraproxyprops.md)): *[CameraProxy](cameraproxy.md)*
 
-*Defined in [src/CameraProxy.ts:108](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L108)*
+*Defined in [src/CameraProxy.ts:107](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L107)*
 
 **Parameters:**
 
@@ -75,7 +75,7 @@ Name | Type |
 
 • **canvasWidth**: *number*
 
-*Defined in [src/CameraProxy.ts:85](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L85)*
+*Defined in [src/CameraProxy.ts:85](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L85)*
 
 画布尺寸
 
@@ -85,7 +85,7 @@ ___
 
 • **config**: *[CameraProxyProps](../interfaces/cameraproxyprops.md)*
 
-*Defined in [src/CameraProxy.ts:76](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L76)*
+*Defined in [src/CameraProxy.ts:76](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L76)*
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 • **lock**: *boolean*
 
-*Defined in [src/CameraProxy.ts:101](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L101)*
+*Defined in [src/CameraProxy.ts:101](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L101)*
 
 锁定后将禁用所有的相机状态变化
 
@@ -103,7 +103,7 @@ ___
 
 • **statesCode**: *string*
 
-*Defined in [src/CameraProxy.ts:96](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L96)*
+*Defined in [src/CameraProxy.ts:96](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L96)*
 
 相机状态码。
 可以用来判断viewChange
@@ -114,7 +114,7 @@ ___
 
 • **get aspect**(): *number*
 
-*Defined in [src/CameraProxy.ts:188](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L188)*
+*Defined in [src/CameraProxy.ts:186](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L186)*
 
 宽高比
 
@@ -126,7 +126,7 @@ ___
 
 • **get canvasHeight**(): *number*
 
-*Defined in [src/CameraProxy.ts:156](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L156)*
+*Defined in [src/CameraProxy.ts:154](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L154)*
 
 画布尺寸
 
@@ -134,7 +134,7 @@ ___
 
 • **set canvasHeight**(`value`: number): *void*
 
-*Defined in [src/CameraProxy.ts:159](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L159)*
+*Defined in [src/CameraProxy.ts:157](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L157)*
 
 画布尺寸
 
@@ -152,7 +152,7 @@ ___
 
 • **get center**(): *number[]*
 
-*Defined in [src/CameraProxy.ts:418](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L418)*
+*Defined in [src/CameraProxy.ts:410](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L410)*
 
 视觉焦点坐标
 
@@ -164,7 +164,7 @@ ___
 
 • **get distance**(): *number*
 
-*Defined in [src/CameraProxy.ts:456](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L456)*
+*Defined in [src/CameraProxy.ts:448](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L448)*
 
 相机到视觉焦点的距离（焦距）
 
@@ -176,7 +176,7 @@ ___
 
 • **get fov**(): *number*
 
-*Defined in [src/CameraProxy.ts:166](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L166)*
+*Defined in [src/CameraProxy.ts:164](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L164)*
 
 透视相机FOV
 
@@ -184,7 +184,7 @@ ___
 
 • **set fov**(`value`: number): *void*
 
-*Defined in [src/CameraProxy.ts:169](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L169)*
+*Defined in [src/CameraProxy.ts:167](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L167)*
 
 透视相机FOV
 
@@ -202,7 +202,7 @@ ___
 
 • **get pitch**(): *number*
 
-*Defined in [src/CameraProxy.ts:430](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L430)*
+*Defined in [src/CameraProxy.ts:422](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L422)*
 
 倾斜角
 
@@ -214,7 +214,7 @@ ___
 
 • **get position**(): *number[]*
 
-*Defined in [src/CameraProxy.ts:442](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L442)*
+*Defined in [src/CameraProxy.ts:434](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L434)*
 
 相机位置
 
@@ -226,7 +226,7 @@ ___
 
 • **get ratio**(): *number*
 
-*Defined in [src/CameraProxy.ts:177](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L177)*
+*Defined in [src/CameraProxy.ts:175](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L175)*
 
 分辨率缩放
 
@@ -234,7 +234,7 @@ ___
 
 • **set ratio**(`value`: number): *void*
 
-*Defined in [src/CameraProxy.ts:180](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L180)*
+*Defined in [src/CameraProxy.ts:178](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L178)*
 
 分辨率缩放
 
@@ -252,7 +252,7 @@ ___
 
 • **get rotation**(): *number*
 
-*Defined in [src/CameraProxy.ts:436](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L436)*
+*Defined in [src/CameraProxy.ts:428](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L428)*
 
 旋转角
 
@@ -264,7 +264,7 @@ ___
 
 • **get rotationEuler**(): *number[]*
 
-*Defined in [src/CameraProxy.ts:449](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L449)*
+*Defined in [src/CameraProxy.ts:441](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L441)*
 
 相机欧拉角
 TODO 左手系支持
@@ -277,7 +277,7 @@ ___
 
 • **get zoom**(): *number*
 
-*Defined in [src/CameraProxy.ts:424](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L424)*
+*Defined in [src/CameraProxy.ts:416](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L416)*
 
 缩放级别
 
@@ -289,7 +289,7 @@ ___
 
 ▸ **codeToStates**(`code`: string): *[GeographicStates](../interfaces/geographicstates.md)*
 
-*Defined in [src/CameraProxy.ts:613](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L613)*
+*Defined in [src/CameraProxy.ts:605](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L605)*
 
 状态吗转换为状态（GeographicStates）
 
@@ -307,7 +307,7 @@ ___
 
 ▸ **dispose**(): *void*
 
-*Defined in [src/CameraProxy.ts:631](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L631)*
+*Defined in [src/CameraProxy.ts:623](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L623)*
 
 dispose
 
@@ -319,7 +319,7 @@ ___
 
 ▸ **getCartesianStates**(): *object*
 
-*Defined in [src/CameraProxy.ts:551](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L551)*
+*Defined in [src/CameraProxy.ts:543](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L543)*
 
 读取 相机3D空间状态
 
@@ -331,7 +331,7 @@ ___
 
 ▸ **getGeoViewCoords**(): *Vector3[]*
 
-*Defined in [src/CameraProxy.ts:255](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L255)*
+*Defined in [src/CameraProxy.ts:253](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L253)*
 
 **Returns:** *Vector3[]*
 
@@ -341,7 +341,7 @@ ___
 
 ▸ **getGeographicStates**(): *[GeographicStates](../interfaces/geographicstates.md)*
 
-*Defined in [src/CameraProxy.ts:535](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L535)*
+*Defined in [src/CameraProxy.ts:527](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L527)*
 
 读取 地图状态
 
@@ -353,7 +353,7 @@ ___
 
 ▸ **getStates**(): *object*
 
-*Defined in [src/CameraProxy.ts:569](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L569)*
+*Defined in [src/CameraProxy.ts:561](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L561)*
 
 两种状态一起导出
 
@@ -365,7 +365,7 @@ ___
 
 ▸ **getStatesCode**(): *string*
 
-*Defined in [src/CameraProxy.ts:588](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L588)*
+*Defined in [src/CameraProxy.ts:580](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L580)*
 
 获取状态码
 
@@ -377,7 +377,7 @@ ___
 
 ▸ **setCartesianStates**(`states`: [CartesianStates](../interfaces/cartesianstates.md)): *void*
 
-*Defined in [src/CameraProxy.ts:560](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L560)*
+*Defined in [src/CameraProxy.ts:552](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L552)*
 
 设置 相机3D空间状态
 
@@ -395,7 +395,7 @@ ___
 
 ▸ **setCenter**(`v`: number[]): *function*
 
-*Defined in [src/CameraProxy.ts:474](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L474)*
+*Defined in [src/CameraProxy.ts:466](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L466)*
 
 **Parameters:**
 
@@ -413,7 +413,7 @@ ___
 
 ▸ **setGeographicStates**(`states`: [GeographicStates](../interfaces/geographicstates.md)): *void*
 
-*Defined in [src/CameraProxy.ts:543](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L543)*
+*Defined in [src/CameraProxy.ts:535](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L535)*
 
 设置 地图状态
 
@@ -431,7 +431,7 @@ ___
 
 ▸ **setPitch**(`v`: number): *function*
 
-*Defined in [src/CameraProxy.ts:481](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L481)*
+*Defined in [src/CameraProxy.ts:473](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L473)*
 
 **Parameters:**
 
@@ -449,7 +449,7 @@ ___
 
 ▸ **setRotation**(`v`: number): *function*
 
-*Defined in [src/CameraProxy.ts:484](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L484)*
+*Defined in [src/CameraProxy.ts:476](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L476)*
 
 **Parameters:**
 
@@ -467,7 +467,7 @@ ___
 
 ▸ **setStates**(`states`: [States](../globals.md#states)): *void*
 
-*Defined in [src/CameraProxy.ts:578](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L578)*
+*Defined in [src/CameraProxy.ts:570](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L570)*
 
 设置状态
 
@@ -485,7 +485,7 @@ ___
 
 ▸ **setStatesCode**(`code`: string): *void*
 
-*Defined in [src/CameraProxy.ts:605](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L605)*
+*Defined in [src/CameraProxy.ts:597](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L597)*
 
 从状态码更新状态
 
@@ -503,7 +503,7 @@ ___
 
 ▸ **setZoom**(`v`: number): *function*
 
-*Defined in [src/CameraProxy.ts:478](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L478)*
+*Defined in [src/CameraProxy.ts:470](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L470)*
 
 **Parameters:**
 

@@ -29,7 +29,7 @@
 
 • **cameraFOV**: *number*
 
-*Defined in [src/CameraProxy.ts:46](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L46)*
+*Defined in [src/CameraProxy.ts:46](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L46)*
 
 相机FOV
 
@@ -39,7 +39,7 @@ ___
 
 • **canvasHeight**: *number*
 
-*Defined in [src/CameraProxy.ts:38](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L38)*
+*Defined in [src/CameraProxy.ts:38](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L38)*
 
 画布尺寸
 
@@ -49,7 +49,7 @@ ___
 
 • **canvasWidth**: *number*
 
-*Defined in [src/CameraProxy.ts:42](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L42)*
+*Defined in [src/CameraProxy.ts:42](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L42)*
 
 画布尺寸
 
@@ -59,7 +59,7 @@ ___
 
 • **limit**? : *[Limit](limit.md)*
 
-*Defined in [src/CameraProxy.ts:62](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L62)*
+*Defined in [src/CameraProxy.ts:62](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L62)*
 
 边界限制
 
@@ -69,7 +69,7 @@ ___
 
 • **onUpdate**? : *function*
 
-*Defined in [src/CameraProxy.ts:66](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L66)*
+*Defined in [src/CameraProxy.ts:66](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L66)*
 
 相机状态需要更新的回调
 
@@ -89,7 +89,7 @@ ___
 
 • **orientation**? : *string*
 
-*Defined in [src/CameraProxy.ts:58](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L58)*
+*Defined in [src/CameraProxy.ts:58](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L58)*
 
 坐标系方向，默认右手系（OpenGL/WebGL）
 
@@ -99,7 +99,7 @@ ___
 
 • **ratio**? : *number*
 
-*Defined in [src/CameraProxy.ts:54](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L54)*
+*Defined in [src/CameraProxy.ts:54](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L54)*
 
 分辨率缩放
 
@@ -109,6 +109,6 @@ ___
 
 • **states**? : *[States](../globals.md#states)*
 
-*Defined in [src/CameraProxy.ts:50](https://github.com/alibaba/camera-proxy/blob/a412c7e/src/CameraProxy.ts#L50)*
+*Defined in [src/CameraProxy.ts:50](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/CameraProxy.ts#L50)*
 
 初始化状态
