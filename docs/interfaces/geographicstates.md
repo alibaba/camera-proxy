@@ -1,61 +1,65 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [GeographicStates](geographicstates.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / GeographicStates
 
 # Interface: GeographicStates
 
 Copyright (c) 2017 Alibaba Group Holding Limited
 
-## Hierarchy
-
-* **GeographicStates**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [center](geographicstates.md#center)
-* [pitch](geographicstates.md#pitch)
-* [rotation](geographicstates.md#rotation)
-* [zoom](geographicstates.md#zoom)
+- [center](GeographicStates.md#center)
+- [pitch](GeographicStates.md#pitch)
+- [rotation](GeographicStates.md#rotation)
+- [zoom](GeographicStates.md#zoom)
 
 ## Properties
 
-###  center
+### center
 
-• **center**: *number[]*
-
-*Defined in [src/interface.ts:13](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L13)*
+• **center**: `number`[]
 
 视觉焦点 坐标
 {east, north, up} 相对于世界中心地表
 
+#### Defined in
+
+[interface.ts:13](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L13)
+
 ___
 
-###  pitch
+### pitch
 
-• **pitch**: *number*
-
-*Defined in [src/interface.ts:18](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L18)*
+• **pitch**: `number`
 
 倾斜角
 相对于垂直向下方向的倾斜角度
 
+#### Defined in
+
+[interface.ts:18](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L18)
+
 ___
 
-###  rotation
+### rotation
 
-• **rotation**: *number*
-
-*Defined in [src/interface.ts:23](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L23)*
+• **rotation**: `number`
 
 旋转角
 相对于正南方向的顺时针倾斜角度
 
+#### Defined in
+
+[interface.ts:23](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L23)
+
 ___
 
-###  zoom
+### zoom
 
-• **zoom**: *number*
-
-*Defined in [src/interface.ts:27](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L27)*
+• **zoom**: `number`
 
 缩放级别
+
+#### Defined in
+
+[interface.ts:27](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L27)

@@ -1,23 +1,21 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [CameramanProps](cameramanprops.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / CameramanProps
 
 # Interface: CameramanProps
 
-## Hierarchy
-
-* **CameramanProps**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [camera](cameramanprops.md#camera)
+- [camera](CameramanProps.md#camera)
 
 ## Properties
 
-###  camera
+### camera
 
-• **camera**: *[AnimatedCameraProxy](../classes/animatedcameraproxy.md)*
-
-*Defined in [src/Cameraman.ts:16](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L16)*
+• **camera**: [`AnimatedCameraProxy`](../classes/AnimatedCameraProxy.md)
 
 被控制的 CameraProxy
+
+#### Defined in
+
+[Cameraman.ts:16](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L16)

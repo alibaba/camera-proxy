@@ -1,115 +1,129 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [PointerControl](pointercontrol.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / PointerControl
 
 # Class: PointerControl
 
-## Hierarchy
-
-* **PointerControl**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](pointercontrol.md#constructor)
+- [constructor](PointerControl.md#constructor)
 
 ### Properties
 
-* [centerLock](pointercontrol.md#centerlock)
-* [pitchLock](pointercontrol.md#pitchlock)
-* [rotationLock](pointercontrol.md#rotationlock)
-* [scale](pointercontrol.md#scale)
-* [zoomLock](pointercontrol.md#zoomlock)
+- [centerLock](PointerControl.md#centerlock)
+- [pitchLock](PointerControl.md#pitchlock)
+- [rotationLock](PointerControl.md#rotationlock)
+- [scale](PointerControl.md#scale)
+- [zoomLock](PointerControl.md#zoomlock)
 
 ### Accessors
 
-* [inControl](pointercontrol.md#incontrol)
+- [inControl](PointerControl.md#incontrol)
 
 ### Methods
 
-* [dispose](pointercontrol.md#dispose)
+- [dispose](PointerControl.md#dispose)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new PointerControl**(`props`: [PointerControlProps](../interfaces/pointercontrolprops.md)): *[PointerControl](pointercontrol.md)*
+• **new PointerControl**(`props`)
 
-*Defined in [src/PointerControl.ts:96](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L96)*
+#### Parameters
 
-**Parameters:**
+| Name | Type |
+| :------ | :------ |
+| `props` | [`PointerControlProps`](../interfaces/PointerControlProps.md) |
 
-Name | Type |
------- | ------ |
-`props` | [PointerControlProps](../interfaces/pointercontrolprops.md) |
+#### Defined in
 
-**Returns:** *[PointerControl](pointercontrol.md)*
+[PointerControl.ts:98](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L98)
 
 ## Properties
 
-###  centerLock
+### centerLock
 
-• **centerLock**: *boolean* = false
-
-*Defined in [src/PointerControl.ts:52](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L52)*
+• **centerLock**: `boolean` = `false`
 
 是否锁定center（禁止用户控制）
 
+#### Defined in
+
+[PointerControl.ts:52](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L52)
+
 ___
 
-###  pitchLock
+### pitchLock
 
-• **pitchLock**: *boolean* = false
-
-*Defined in [src/PointerControl.ts:56](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L56)*
+• **pitchLock**: `boolean` = `false`
 
 是否锁定pitch（禁止用户控制）
 
+#### Defined in
+
+[PointerControl.ts:56](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L56)
+
 ___
 
-###  rotationLock
+### rotationLock
 
-• **rotationLock**: *boolean* = false
-
-*Defined in [src/PointerControl.ts:60](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L60)*
+• **rotationLock**: `boolean` = `false`
 
 是否锁定rotation（禁止用户控制）
 
+#### Defined in
+
+[PointerControl.ts:60](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L60)
+
 ___
 
-###  scale
+### scale
 
-• **scale**: *number* = 1
-
-*Defined in [src/PointerControl.ts:69](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L69)*
+• **scale**: `number` = `1.0`
 
 画布缩放比例
 
+#### Defined in
+
+[PointerControl.ts:69](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L69)
+
 ___
 
-###  zoomLock
+### zoomLock
 
-• **zoomLock**: *boolean* = false
-
-*Defined in [src/PointerControl.ts:64](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L64)*
+• **zoomLock**: `boolean` = `false`
 
 是否锁定zoom（禁止用户控制）
 
+#### Defined in
+
+[PointerControl.ts:64](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L64)
+
 ## Accessors
 
-###  inControl
+### inControl
 
-• **get inControl**(): *boolean*
+• `get` **inControl**(): `boolean`
 
-*Defined in [src/PointerControl.ts:236](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L236)*
+#### Returns
 
-**Returns:** *boolean*
+`boolean`
+
+#### Defined in
+
+[PointerControl.ts:236](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L236)
 
 ## Methods
 
-###  dispose
+### dispose
 
-▸ **dispose**(): *void*
+▸ **dispose**(): `void`
 
-*Defined in [src/PointerControl.ts:248](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L248)*
+#### Returns
 
-**Returns:** *void*
+`void`
+
+#### Defined in
+
+[PointerControl.ts:248](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L248)

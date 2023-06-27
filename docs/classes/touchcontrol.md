@@ -1,79 +1,85 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [TouchControl](touchcontrol.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / TouchControl
 
 # Class: TouchControl
 
-## Hierarchy
-
-* **TouchControl**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](touchcontrol.md#constructor)
+- [constructor](TouchControl.md#constructor)
 
 ### Properties
 
-* [panLock](touchcontrol.md#panlock)
-* [pinchLock](touchcontrol.md#pinchlock)
-* [scale](touchcontrol.md#scale)
+- [panLock](TouchControl.md#panlock)
+- [pinchLock](TouchControl.md#pinchlock)
+- [scale](TouchControl.md#scale)
 
 ### Methods
 
-* [dispose](touchcontrol.md#dispose)
+- [dispose](TouchControl.md#dispose)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new TouchControl**(`props`: [TouchControlProps](../interfaces/touchcontrolprops.md)): *[TouchControl](touchcontrol.md)*
+• **new TouchControl**(`props`)
 
-*Defined in [src/TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/TouchControl.ts#L52)*
+#### Parameters
 
-**Parameters:**
+| Name | Type |
+| :------ | :------ |
+| `props` | [`TouchControlProps`](../interfaces/TouchControlProps.md) |
 
-Name | Type |
------- | ------ |
-`props` | [TouchControlProps](../interfaces/touchcontrolprops.md) |
+#### Defined in
 
-**Returns:** *[TouchControl](touchcontrol.md)*
+[TouchControl.ts:54](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L54)
 
 ## Properties
 
-###  panLock
+### panLock
 
-• **panLock**: *boolean* = false
-
-*Defined in [src/TouchControl.ts:39](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/TouchControl.ts#L39)*
+• **panLock**: `boolean` = `false`
 
 是否锁定pan（禁止用户控制）
 
+#### Defined in
+
+[TouchControl.ts:39](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L39)
+
 ___
 
-###  pinchLock
+### pinchLock
 
-• **pinchLock**: *boolean* = false
-
-*Defined in [src/TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/TouchControl.ts#L43)*
+• **pinchLock**: `boolean` = `false`
 
 是否锁定pinch（禁止用户控制）
 
+#### Defined in
+
+[TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L43)
+
 ___
 
-###  scale
+### scale
 
-• **scale**: *number* = 1
-
-*Defined in [src/TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/TouchControl.ts#L52)*
+• **scale**: `number` = `1.0`
 
 画布缩放比例
 
+#### Defined in
+
+[TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L52)
+
 ## Methods
 
-###  dispose
+### dispose
 
-▸ **dispose**(): *void*
+▸ **dispose**(): `void`
 
-*Defined in [src/TouchControl.ts:168](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/TouchControl.ts#L168)*
+#### Returns
 
-**Returns:** *void*
+`void`
+
+#### Defined in
+
+[TouchControl.ts:168](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L168)

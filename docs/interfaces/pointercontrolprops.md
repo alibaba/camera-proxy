@@ -1,69 +1,75 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [PointerControlProps](pointercontrolprops.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / PointerControlProps
 
 # Interface: PointerControlProps
 
-## Hierarchy
-
-* **PointerControlProps**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [camera](pointercontrolprops.md#camera)
-* [element](pointercontrolprops.md#element)
-* [horizontal](pointercontrolprops.md#optional-horizontal)
-* [scale](pointercontrolprops.md#optional-scale)
-* [scrollCapture](pointercontrolprops.md#optional-scrollcapture)
+- [camera](PointerControlProps.md#camera)
+- [element](PointerControlProps.md#element)
+- [horizontal](PointerControlProps.md#horizontal)
+- [scale](PointerControlProps.md#scale)
+- [scrollCapture](PointerControlProps.md#scrollcapture)
 
 ## Properties
 
-###  camera
+### camera
 
-• **camera**: *[CameraProxy](../classes/cameraproxy.md)*
-
-*Defined in [src/PointerControl.ts:12](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L12)*
+• **camera**: [`CameraProxy`](../classes/CameraProxy.md)
 
 被控制的 CameraProxy
 
+#### Defined in
+
+[PointerControl.ts:12](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L12)
+
 ___
 
-###  element
+### element
 
-• **element**: *HTMLElement*
-
-*Defined in [src/PointerControl.ts:16](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L16)*
+• **element**: `HTMLElement`
 
 监控事件的HTML元素
 
+#### Defined in
+
+[PointerControl.ts:16](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L16)
+
 ___
 
-### `Optional` horizontal
+### horizontal
 
-• **horizontal**? : *boolean*
-
-*Defined in [src/PointerControl.ts:26](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L26)*
+• `Optional` **horizontal**: `boolean`
 
 只在水平（地平面）方向上运动，如果设为false，则在视觉平面上运动
 [=true]
 
+#### Defined in
+
+[PointerControl.ts:26](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L26)
+
 ___
 
-### `Optional` scale
+### scale
 
-• **scale**? : *number*
-
-*Defined in [src/PointerControl.ts:36](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L36)*
+• `Optional` **scale**: `number`
 
 画布缩放比例
 
+#### Defined in
+
+[PointerControl.ts:36](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L36)
+
 ___
 
-### `Optional` scrollCapture
+### scrollCapture
 
-• **scrollCapture**? : *boolean*
-
-*Defined in [src/PointerControl.ts:21](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/PointerControl.ts#L21)*
+• `Optional` **scrollCapture**: `boolean`
 
 捕获鼠标滚动作为缩放控制，如果设为false则需要按住控制键才能滚动缩放，
 [=true]
+
+#### Defined in
+
+[PointerControl.ts:21](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L21)

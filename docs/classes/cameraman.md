@@ -1,124 +1,146 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [Cameraman](cameraman.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / Cameraman
 
 # Class: Cameraman
 
-## Hierarchy
-
-* **Cameraman**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](cameraman.md#constructor)
+- [constructor](Cameraman.md#constructor)
 
 ### Properties
 
-* [locked](cameraman.md#locked)
+- [locked](Cameraman.md#locked)
 
 ### Methods
 
-* [startCircling](cameraman.md#startcircling)
-* [startSliding](cameraman.md#startsliding)
-* [startSwing](cameraman.md#startswing)
-* [stopCircling](cameraman.md#stopcircling)
-* [stopSliding](cameraman.md#stopsliding)
-* [stopSwing](cameraman.md#stopswing)
+- [startCircling](Cameraman.md#startcircling)
+- [startSliding](Cameraman.md#startsliding)
+- [startSwing](Cameraman.md#startswing)
+- [stopCircling](Cameraman.md#stopcircling)
+- [stopSliding](Cameraman.md#stopsliding)
+- [stopSwing](Cameraman.md#stopswing)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new Cameraman**(`props`: [CameramanProps](../interfaces/cameramanprops.md)): *[Cameraman](cameraman.md)*
+• **new Cameraman**(`props`)
 
-*Defined in [src/Cameraman.ts:24](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L24)*
+#### Parameters
 
-**Parameters:**
+| Name | Type |
+| :------ | :------ |
+| `props` | [`CameramanProps`](../interfaces/CameramanProps.md) |
 
-Name | Type |
------- | ------ |
-`props` | [CameramanProps](../interfaces/cameramanprops.md) |
+#### Defined in
 
-**Returns:** *[Cameraman](cameraman.md)*
+[Cameraman.ts:26](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L26)
 
 ## Properties
 
-###  locked
+### locked
 
-• **locked**: *boolean*
+• **locked**: `boolean`
 
-*Defined in [src/Cameraman.ts:23](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L23)*
+#### Defined in
+
+[Cameraman.ts:23](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L23)
 
 ## Methods
 
-###  startCircling
+### startCircling
 
-▸ **startCircling**(): *void*
+▸ **startCircling**(): `void`
 
-*Defined in [src/Cameraman.ts:81](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L81)*
+#### Returns
 
-**Returns:** *void*
+`void`
 
-___
+#### Defined in
 
-###  startSliding
-
-▸ **startSliding**(): *void*
-
-*Defined in [src/Cameraman.ts:84](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L84)*
-
-**Returns:** *void*
+[Cameraman.ts:81](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L81)
 
 ___
 
-###  startSwing
+### startSliding
 
-▸ **startSwing**(`theta`: number, `duration`: number, `anchor?`: number[]): *void*
+▸ **startSliding**(): `void`
 
-*Defined in [src/Cameraman.ts:33](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L33)*
+#### Returns
 
-**Parameters:**
+`void`
 
-Name | Type |
------- | ------ |
-`theta` | number |
-`duration` | number |
-`anchor?` | number[] |
+#### Defined in
 
-**Returns:** *void*
+[Cameraman.ts:84](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L84)
 
 ___
 
-###  stopCircling
+### startSwing
 
-▸ **stopCircling**(): *void*
+▸ **startSwing**(`theta`, `duration`, `anchor?`): `void`
 
-*Defined in [src/Cameraman.ts:82](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L82)*
+#### Parameters
 
-**Returns:** *void*
+| Name | Type |
+| :------ | :------ |
+| `theta` | `number` |
+| `duration` | `number` |
+| `anchor?` | `number`[] |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[Cameraman.ts:33](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L33)
 
 ___
 
-###  stopSliding
+### stopCircling
 
-▸ **stopSliding**(): *void*
+▸ **stopCircling**(): `void`
 
-*Defined in [src/Cameraman.ts:85](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L85)*
+#### Returns
 
-**Returns:** *void*
+`void`
+
+#### Defined in
+
+[Cameraman.ts:82](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L82)
 
 ___
 
-###  stopSwing
+### stopSliding
 
-▸ **stopSwing**(`reset`: boolean): *void*
+▸ **stopSliding**(): `void`
 
-*Defined in [src/Cameraman.ts:73](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/Cameraman.ts#L73)*
+#### Returns
 
-**Parameters:**
+`void`
 
-Name | Type | Default |
------- | ------ | ------ |
-`reset` | boolean | true |
+#### Defined in
 
-**Returns:** *void*
+[Cameraman.ts:85](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L85)
+
+___
+
+### stopSwing
+
+▸ **stopSwing**(`reset?`): `void`
+
+#### Parameters
+
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `reset` | `boolean` | `true` |
+
+#### Returns
+
+`void`
+
+#### Defined in
+
+[Cameraman.ts:73](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L73)

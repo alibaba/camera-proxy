@@ -1,82 +1,90 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [RemoteSyncer](remotesyncer.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / RemoteSyncer
 
 # Class: RemoteSyncer
 
-## Hierarchy
-
-* **RemoteSyncer**
-
-## Index
+## Table of contents
 
 ### Constructors
 
-* [constructor](remotesyncer.md#constructor)
+- [constructor](RemoteSyncer.md#constructor)
 
 ### Properties
 
-* [active](remotesyncer.md#active)
-* [camera](remotesyncer.md#camera)
-* [config](remotesyncer.md#config)
-* [mqclient](remotesyncer.md#mqclient)
+- [active](RemoteSyncer.md#active)
+- [camera](RemoteSyncer.md#camera)
+- [config](RemoteSyncer.md#config)
+- [mqclient](RemoteSyncer.md#mqclient)
 
 ### Methods
 
-* [dispose](remotesyncer.md#dispose)
+- [dispose](RemoteSyncer.md#dispose)
 
 ## Constructors
 
-###  constructor
+### constructor
 
-\+ **new RemoteSyncer**(`props`: [RemoteSyncerProps](../interfaces/remotesyncerprops.md)): *[RemoteSyncer](remotesyncer.md)*
+• **new RemoteSyncer**(`props`)
 
-*Defined in [src/RemoteSyncer.ts:31](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/RemoteSyncer.ts#L31)*
+#### Parameters
 
-**Parameters:**
+| Name | Type |
+| :------ | :------ |
+| `props` | `RemoteSyncerProps` |
 
-Name | Type |
------- | ------ |
-`props` | [RemoteSyncerProps](../interfaces/remotesyncerprops.md) |
+#### Defined in
 
-**Returns:** *[RemoteSyncer](remotesyncer.md)*
+[RemoteSyncer.ts:33](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L33)
 
 ## Properties
 
-###  active
+### active
 
-• **active**: *boolean*
+• **active**: `boolean`
 
-*Defined in [src/RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/RemoteSyncer.ts#L28)*
+#### Defined in
 
-___
-
-###  camera
-
-• **camera**: *[CameraProxy](cameraproxy.md)*
-
-*Defined in [src/RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/RemoteSyncer.ts#L24)*
+[RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L28)
 
 ___
 
-###  config
+### camera
 
-• **config**: *[RemoteSyncerProps](../interfaces/remotesyncerprops.md)*
+• **camera**: [`CameraProxy`](CameraProxy.md)
 
-*Defined in [src/RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/RemoteSyncer.ts#L23)*
+#### Defined in
+
+[RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L24)
 
 ___
 
-###  mqclient
+### config
 
-• **mqclient**: *MQClient*
+• **config**: `RemoteSyncerProps`
 
-*Defined in [src/RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/RemoteSyncer.ts#L25)*
+#### Defined in
+
+[RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L23)
+
+___
+
+### mqclient
+
+• **mqclient**: `MQClient`
+
+#### Defined in
+
+[RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L25)
 
 ## Methods
 
-###  dispose
+### dispose
 
-▸ **dispose**(): *void*
+▸ **dispose**(): `void`
 
-*Defined in [src/RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/RemoteSyncer.ts#L94)*
+#### Returns
 
-**Returns:** *void*
+`void`
+
+#### Defined in
+
+[RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L94)

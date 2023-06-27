@@ -1,6 +1,4 @@
-[camera-proxy](README.md) › [Globals](globals.md)
-
-# camera-proxy
+camera-proxy / [Exports](modules.md)
 
 # 通用相机模块 - General 3D Camera Controller for All Render Engines.
 
@@ -142,4 +140,4 @@ const syncer = new RemoteSyncer({
 
 ## API
 
-详见 [docs](./docs/globals.md) 和 [源码](./src)
+详见 [docs](./docs/modules.md) 和 [源码](./src)

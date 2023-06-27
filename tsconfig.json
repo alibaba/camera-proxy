@@ -16,13 +16,14 @@
 	},
 	"exclude": ["node_modules", "dist", "demo"],
 	"typedocOptions": {
-		"mode": "file",
+		// "mode": "file",
+		"entryPoints": ["./src/index.ts"],
 		"out": "docs",
 		"theme": "markdown",
 		"hideGenerator": true,
 		"excludeProtected": true,
 		"excludePrivate": true,
-		"excludeNotExported": true,
+		"excludeInternal": true,
 		"excludeExternals": true,
 		"exclude": ["*/util.ts", "*/MQClient.ts"]
 	}

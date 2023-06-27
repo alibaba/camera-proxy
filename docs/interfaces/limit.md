@@ -1,62 +1,66 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [Limit](limit.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / Limit
 
 # Interface: Limit
 
 地图相机状态变化范围
 
-## Hierarchy
-
-* **Limit**
-
-## Index
+## Table of contents
 
 ### Properties
 
-* [center](limit.md#optional-center)
-* [pitch](limit.md#optional-pitch)
-* [rotation](limit.md#optional-rotation)
-* [zoom](limit.md#optional-zoom)
+- [center](Limit.md#center)
+- [pitch](Limit.md#pitch)
+- [rotation](Limit.md#rotation)
+- [zoom](Limit.md#zoom)
 
 ## Properties
 
-### `Optional` center
+### center
 
-• **center**? : *number[][]*
-
-*Defined in [src/interface.ts:110](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L110)*
+• `Optional` **center**: `number`[][]
 
 中心坐标限制
 {下限{east, north, up}, 上限{east, north, up}}
 
+#### Defined in
+
+[interface.ts:110](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L110)
+
 ___
 
-### `Optional` pitch
+### pitch
 
-• **pitch**? : *number[]*
-
-*Defined in [src/interface.ts:100](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L100)*
+• `Optional` **pitch**: `number`[]
 
 倾斜角度限制
 {下限, 上限}
 
+#### Defined in
+
+[interface.ts:100](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L100)
+
 ___
 
-### `Optional` rotation
+### rotation
 
-• **rotation**? : *number[]*
-
-*Defined in [src/interface.ts:105](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L105)*
+• `Optional` **rotation**: `number`[]
 
 旋转角度限制
 {下限, 上限}
 
+#### Defined in
+
+[interface.ts:105](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L105)
+
 ___
 
-### `Optional` zoom
+### zoom
 
-• **zoom**? : *number[]*
-
-*Defined in [src/interface.ts:95](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L95)*
+• `Optional` **zoom**: `number`[]
 
 缩放级别
 {下限, 上限}
+
+#### Defined in
+
+[interface.ts:95](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L95)

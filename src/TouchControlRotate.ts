@@ -6,6 +6,9 @@ import Hammer from 'hammerjs'
 
 import { CameraProxy } from './CameraProxy'
 
+/**
+ * @experimental
+ */
 export interface TouchControlRotateProps {
 	/**
 	 * 被控制的 CameraProxy

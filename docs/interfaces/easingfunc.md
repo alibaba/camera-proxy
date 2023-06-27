@@ -1,21 +1,23 @@
-[camera-proxy](../README.md) › [Globals](../globals.md) › [EasingFunc](easingfunc.md)
+[camera-proxy](../README.md) / [Exports](../modules.md) / EasingFunc
 
 # Interface: EasingFunc
 
-## Hierarchy
-
-* **EasingFunc**
-
 ## Callable
 
-▸ (`p`: number): *number*
+### EasingFunc
 
-*Defined in [src/interface.ts:124](https://github.com/alibaba/camera-proxy/blob/2fa184b/src/interface.ts#L124)*
+▸ **EasingFunc**(`p`): `number`
 
-**Parameters:**
+#### Parameters
 
-Name | Type |
------- | ------ |
-`p` | number |
+| Name | Type |
+| :------ | :------ |
+| `p` | `number` |
 
-**Returns:** *number*
+#### Returns
+
+`number`
+
+#### Defined in
+
+[interface.ts:125](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L125)
