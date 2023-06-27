@@ -11,118 +11,22 @@ import { Timeline, Track } from 'ani-timeline'
 
 export interface CameraAnimatorProps extends CameraProxyProps {
 	timeline: Timeline
-	inert?: boolean | number
-}
-
-const defaultProps = {
-	inert: false,
 }
 
 export class AnimatedCameraProxy extends CameraProxy {
 	readonly config: CameraAnimatorProps
-	private inertOutput: GeographicStates
-
-	private onUpdate: Function
 
 	public timeline: Timeline // 缓动需要
-
-	private inertTrack: Track // 惰性收敛动画
 
 	/**
 	 * 缓动锁定，避免同时出发多个缓动动画造成冲突
 	 */
 	public easingLock: boolean
 	constructor(props: CameraAnimatorProps) {
-		props = { ...defaultProps, ...props }
-		if (!props.inert) {
-			super(props)
-			this.timeline = props.timeline
-		} else {
-			// 避免super.update里面直接调用onUpdate
-			const onUpdate = props.onUpdate
-			delete props.onUpdate
+		props = { ...props }
 
-			super(props)
-			this.timeline = props.timeline
-			this.onUpdate = onUpdate
-
-			this.inertOutput = {
-				center: super.center,
-				zoom: super.zoom,
-				pitch: super.pitch,
-				rotation: super.rotation,
-				// position: super.position,
-				// rotationEuler: super.rotationEuler,
-				// distance: super.distance,
-			}
-
-			this.onUpdate(this)
-
-			// TODO: Its kind of messy here.
-			// this.inertGeoStates = JSON.parse(JSON.stringify(this.geoStates))
-			// JS中可以直接这样做反射
-			this.update = (selfBase) => {
-				if (selfBase) {
-					super.update(true)
-				} else {
-					// 边界限制
-					// 这里需要重做一边，因为 super.update() 中处理的是 inertOutput
-					this.geoStates.zoom = clamp(this.geoStates.zoom, this.limit.zoom[0], this.limit.zoom[1])
-					this.geoStates.pitch = clamp(
-						this.geoStates.pitch,
-						this.limit.pitch[0],
-						this.limit.pitch[1]
-					)
-
-					// @TODO 自转将无法限制center范围
-					this.geoStates.center[0] = clamp(
-						this.geoStates.center[0],
-						this.limit.center[0][0],
-						this.limit.center[1][0]
-					)
-					this.geoStates.center[1] = clamp(
-						this.geoStates.center[1],
-						this.limit.center[0][1],
-						this.limit.center[1][1]
-					)
-					this.geoStates.center[2] = clamp(
-						this.geoStates.center[2],
-						this.limit.center[0][2],
-						this.limit.center[1][2]
-					)
-
-					const pro = this.geoStates
-					this.geoStates = this.inertOutput
-					super.update()
-					this.geoStates = pro
-				}
-			}
-
-			const speed = props.inert === true ? 0.1 : (this.config.inert as number)
-
-			this.inertTrack = this.timeline.addTrack({
-				id: 'inert convergence', // 惰性状态收敛
-				duration: Infinity,
-				onUpdate: (t, p) => {
-					this.inertOutput.center = lerp(this.inertOutput.center, this.geoStates.center, speed)
-					this.inertOutput.pitch = lerp(this.inertOutput.pitch, this.geoStates.pitch, speed)
-					this.inertOutput.rotation = lerp(
-						this.inertOutput.rotation,
-						this.geoStates.rotation,
-						speed
-					)
-					this.inertOutput.zoom = lerp(this.inertOutput.zoom, this.geoStates.zoom, speed)
-
-					const oldCode = this.statesCode
-
-					this.update()
-
-					if (oldCode !== this.statesCode) {
-						this.onUpdate(this)
-					}
-				},
-			})
-		}
+		super(props)
+		this.timeline = props.timeline
 	}
 
 	/**
@@ -223,6 +127,10 @@ export class AnimatedCameraProxy extends CameraProxy {
 		return this._setStateEase(false, this.geoStates, 'rotation', v, duration, easeF, onStart, onEnd)
 	}
 
+	/**
+	 * 地图飞行效果的机位动画
+	 * @todo 移动到 cameraman 类中
+	 */
 	public setGeographicStatesEase(
 		states: GeographicStates,
 		duration = 1000,
@@ -314,7 +222,6 @@ export class AnimatedCameraProxy extends CameraProxy {
 	 */
 	public dispose() {
 		this.update = (selfBase) => {}
-		this.inertTrack && (this.inertTrack.alive = false)
 		super.dispose()
 	}
 }

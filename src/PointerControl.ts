@@ -34,6 +34,12 @@ export interface PointerControlProps {
 	 * 画布缩放比例
 	 */
 	scale?: number
+
+	/**
+	 * @todo 动力学运动
+	 * 惰性缓动
+	 */
+	// inertia?: boolean
 }
 
 const defaultProps = {
