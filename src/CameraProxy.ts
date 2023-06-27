@@ -64,6 +64,12 @@ export interface CameraProxyProps {
 	 * 相机状态需要更新的回调
 	 */
 	onUpdate?: (camProxy: CameraProxy) => void
+
+	/**
+	 * StateCode 小数点后保留位数
+	 * - 相机状态变化监测依赖于 StateCode 字符串，如果精度不足，会表现为小幅度抖动无效果，或慢速动画卡顿
+	 */
+	stateCodePrecision?: number
 }
 
 /**
@@ -110,6 +116,7 @@ export class CameraProxy {
 		const defaultProps = {
 			orientation: 'right',
 			ratio: 1,
+			stateCodePrecision: 3,
 			states: defaultGeographicStates(),
 			onUpdate: (camProxy: this) => {},
 		}
@@ -277,11 +284,10 @@ export class CameraProxy {
 	// set this.geoStates/decStates before call this method
 	// this method will unify both those states
 	protected update(selfBase = false): void {
-		// debugger
 		if (this.lock) return // 缓动锁定
 
 		// 边界限制
-		// if (!force) {
+
 		this.geoStates.zoom = clamp(this.geoStates.zoom, this.limit.zoom[0], this.limit.zoom[1])
 		this.geoStates.pitch = clamp(this.geoStates.pitch, this.limit.pitch[0], this.limit.pitch[1])
 
@@ -301,10 +307,6 @@ export class CameraProxy {
 			this.limit.center[0][2],
 			this.limit.center[1][2]
 		)
-
-		// }
-		// 这个不限制的话会导致计算过程抛错
-		// this.geoStates.zoom = clamp(this.geoStates.zoom, ZOOM_LIMIT[0], ZOOM_LIMIT[1])
 
 		// unify between 2 states systems
 		if (selfBase) {
@@ -349,9 +351,6 @@ export class CameraProxy {
 			}
 
 			this._centerVec3.toArray(this.geoStates.center)
-			// this.geoStates.center[0] = this._centerVec3.x
-			// this.geoStates.center[1] = this._centerVec3.y
-			// this.geoStates.center[2] = this._centerVec3.z
 
 			// => zoom
 
@@ -578,15 +577,16 @@ export class CameraProxy {
 	 * 获取状态码
 	 */
 	public getStatesCode(): string {
+		const precision = this.config.stateCodePrecision
 		const CODE_VERSION = 0
 		const statesTuple = [
 			CODE_VERSION, // 0
-			(this.center[0] || 0).toFixed(3), // 1
-			(this.center[1] || 0).toFixed(3), // 2
-			(this.center[2] || 0).toFixed(3), // 3
-			(this.pitch || 0).toFixed(3), // 4
-			(this.rotation || 0).toFixed(3), // 5
-			(this.zoom || 0).toFixed(3), // 6
+			(this.center[0] || 0).toFixed(precision), // 1
+			(this.center[1] || 0).toFixed(precision), // 2
+			(this.center[2] || 0).toFixed(precision), // 3
+			(this.pitch || 0).toFixed(precision + 1), // 4
+			(this.rotation || 0).toFixed(precision + 1), // 5
+			(this.zoom || 0).toFixed(precision + 1), // 6
 		]
 
 		return statesTuple.join('|')
