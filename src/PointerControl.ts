@@ -124,8 +124,6 @@ export class PointerControl {
 		this._onkeydown = (e) => {
 			if (isCtrlKey(e.keyCode)) {
 				this.key[e.keyCode] = true
-				e.preventDefault()
-				e.stopPropagation()
 			}
 		}
 		document.addEventListener('keydown', this._onkeydown, false)
@@ -133,8 +131,6 @@ export class PointerControl {
 		this._onkeyup = (e) => {
 			if (isCtrlKey(e.keyCode)) {
 				this.key[e.keyCode] = false
-				e.preventDefault()
-				e.stopPropagation()
 			}
 		}
 		document.addEventListener('keyup', this._onkeyup, false)
@@ -228,6 +224,7 @@ export class PointerControl {
 		this._oncontextmenu = (e) => {
 			e.preventDefault()
 			e.stopPropagation()
+			return false
 		}
 		elm.addEventListener('contextmenu', this._oncontextmenu, false)
 	}
