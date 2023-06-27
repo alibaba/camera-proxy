@@ -2,9 +2,9 @@
  * Copyright (c) 2017 Alibaba Group Holding Limited
  */
 
-// 🌟状态设计
-
-// 标准地图机位
+/**
+ * 标准地图机位
+ */
 export interface GeographicStates {
 	/**
 	 * 视觉焦点 坐标
@@ -27,7 +27,9 @@ export interface GeographicStates {
 	zoom: number
 }
 
-// 标准笛卡尔坐标系机位
+/**
+ * 标准笛卡尔坐标系机位
+ */
 export interface CartesianStates {
 	/**
 	 * 相机机位的世界坐标
@@ -48,9 +50,6 @@ export interface CartesianStates {
 	 * 		- GeographicStates.center[2] = 0
 	 */
 	distance: number
-
-	// reference?: number[] // 参考系 (parental group position)
-	// relativePosition?: number[] // 本地坐标
 }
 
 export type States = GeographicStates | CartesianStates
@@ -78,8 +77,6 @@ export function defaultCartesianStates() {
 	return {
 		position: [10, 10, 10],
 		rotationEuler: [0, 0, 0],
-		// reference: [5, 5, 5],
-		// relativePosition: [5, 5, 5],
 		distance: 1000,
 	}
 }
@@ -124,41 +121,3 @@ export const defaultLimit: Limit = {
 export interface EasingFunc {
 	(p: number): number
 }
-
-// 🌟
-const _RAD2ANGEL = 180 / Math.PI
-const _ANGLE2RAD = Math.PI / 180
-
-// 控制接口
-
-// export interface ICameraControllor {
-// 	center: number[]
-// 	zoom: number
-// 	pitch: number
-// 	rotation: number
-// 	position: number[]
-// 	rotationEuler: number[]
-// 	distance: number
-
-// 	setCenter:
-// 		| ((v: number[], duration: number, easeF: EasingFunc) => Function)
-// 		| ((v: number[]) => void)
-
-// 	setZoom:
-// 		| ((v: number[], duration: number, easeF: EasingFunc) => Function)
-// 		| ((v: number[]) => void)
-
-// 	setPitch:
-// 		| ((v: number[], duration: number, easeF: EasingFunc) => Function)
-// 		| ((v: number[]) => void)
-// 	setRotation:
-// 		| ((v: number[], duration: number, easeF: EasingFunc) => Function)
-// 		| ((v: number[]) => void)
-
-// 	// setGeographicStates: (states: GeographicStates, duration: number, easing: EasingFunc) => any
-// 	// setCartesianStates: (states: CartesianStates, duration: number, easing: EasingFunc) => any
-// 	// setStates: (states: States, duration: number, easing: EasingFunc) => any
-
-// 	goUp: (step, horizontal: boolean) => void
-// 	goRight: (step, horizontal: boolean) => void
-// }

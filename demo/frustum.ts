@@ -20,12 +20,12 @@ scene.add(new THREE.HemisphereLight())
 
 const renderer = new THREE.WebGLRenderer({ antialias: true })
 renderer.setSize(window.innerWidth, window.innerHeight)
-document.querySelector('#container').appendChild(renderer.domElement)
+document.querySelector('#container')!.appendChild(renderer.domElement)
 
 // sphere indicators
-var geometry = new THREE.SphereGeometry(0.1, 40, 20)
-var material = new THREE.MeshNormalMaterial()
-var spheres = []
+const geometry = new THREE.SphereGeometry(0.1, 40, 20)
+const material = new THREE.MeshNormalMaterial()
+const spheres = [] as THREE.Mesh[]
 spheres[0] = new THREE.Mesh(geometry, material)
 spheres[1] = new THREE.Mesh(geometry, material)
 spheres[2] = new THREE.Mesh(geometry, material)

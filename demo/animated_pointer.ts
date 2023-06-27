@@ -24,7 +24,7 @@ scene.add(new THREE.HemisphereLight())
 
 const renderer = new THREE.WebGLRenderer({ antialias: true })
 renderer.setSize(window.innerWidth, window.innerHeight)
-document.querySelector('#container').appendChild(renderer.domElement)
+document.querySelector('#container')!.appendChild(renderer.domElement)
 var geometry = new THREE.BoxGeometry(1000, 1000, 1000)
 var material = new THREE.MeshNormalMaterial()
 var cube = new THREE.Mesh(geometry, material)
@@ -39,7 +39,7 @@ animate()
 const cam = new AnimatedCameraProxy({
 	timeline,
 
-	inert: true,
+	// inert: true,
 
 	cameraFOV: camera.fov,
 	states: {
