@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[TouchControlRotate.ts:50](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L50)
+[TouchControlRotate.ts:50](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L50)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[TouchControlRotate.ts:48](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L48)
+[TouchControlRotate.ts:48](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L48)
 
 ## Methods
 
@@ -56,4 +56,4 @@
 
 #### Defined in
 
-[TouchControlRotate.ts:194](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L194)
+[TouchControlRotate.ts:194](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L194)

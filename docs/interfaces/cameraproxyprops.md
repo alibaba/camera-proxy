@@ -21,6 +21,7 @@
 - [onUpdate](CameraProxyProps.md#onupdate)
 - [orientation](CameraProxyProps.md#orientation)
 - [ratio](CameraProxyProps.md#ratio)
+- [stateCodePrecision](CameraProxyProps.md#statecodeprecision)
 - [states](CameraProxyProps.md#states)
 
 ## Properties
@@ -33,7 +34,7 @@
 
 #### Defined in
 
-[CameraProxy.ts:46](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L46)
+[CameraProxy.ts:46](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L46)
 
 ___
 
@@ -45,7 +46,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:38](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L38)
+[CameraProxy.ts:38](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L38)
 
 ___
 
@@ -57,7 +58,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:42](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L42)
+[CameraProxy.ts:42](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L42)
 
 ___
 
@@ -69,7 +70,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:62](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L62)
+[CameraProxy.ts:62](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L62)
 
 ___
 
@@ -95,7 +96,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:66](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L66)
+[CameraProxy.ts:66](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L66)
 
 ___
 
@@ -107,7 +108,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:58](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L58)
+[CameraProxy.ts:58](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L58)
 
 ___
 
@@ -119,7 +120,20 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:54](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L54)
+[CameraProxy.ts:54](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L54)
+
+___
+
+### stateCodePrecision
+
+• `Optional` **stateCodePrecision**: `number`
+
+StateCode 小数点后保留位数
+- 相机状态变化监测依赖于 StateCode 字符串，如果精度不足，会表现为小幅度抖动无效果，或慢速动画卡顿
+
+#### Defined in
+
+[CameraProxy.ts:72](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L72)
 
 ___
 
@@ -131,4 +145,4 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:50](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L50)
+[CameraProxy.ts:50](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L50)

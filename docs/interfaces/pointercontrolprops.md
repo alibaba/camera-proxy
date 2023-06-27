@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[PointerControl.ts:12](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L12)
+[PointerControl.ts:12](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L12)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:16](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L16)
+[PointerControl.ts:16](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L16)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:26](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L26)
+[PointerControl.ts:26](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L26)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:36](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L36)
+[PointerControl.ts:36](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L36)
 
 ___
 
@@ -72,4 +72,4 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:21](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L21)
+[PointerControl.ts:21](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L21)

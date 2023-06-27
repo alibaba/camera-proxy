@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[PointerControl.ts:98](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L98)
+[PointerControl.ts:104](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L104)
 
 ## Properties
 
@@ -50,7 +50,7 @@
 
 #### Defined in
 
-[PointerControl.ts:52](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L52)
+[PointerControl.ts:58](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L58)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:56](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L56)
+[PointerControl.ts:62](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L62)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:60](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L60)
+[PointerControl.ts:66](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L66)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:69](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L69)
+[PointerControl.ts:75](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L75)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:64](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L64)
+[PointerControl.ts:70](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L70)
 
 ## Accessors
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:236](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L236)
+[PointerControl.ts:239](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L239)
 
 ## Methods
 
@@ -126,4 +126,4 @@ ___
 
 #### Defined in
 
-[PointerControl.ts:248](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/PointerControl.ts#L248)
+[PointerControl.ts:251](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/PointerControl.ts#L251)

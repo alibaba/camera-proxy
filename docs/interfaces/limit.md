@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[interface.ts:110](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L110)
+[interface.ts:107](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L107)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[interface.ts:100](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L100)
+[interface.ts:97](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L97)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[interface.ts:105](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L105)
+[interface.ts:102](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L102)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[interface.ts:95](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L95)
+[interface.ts:92](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L92)

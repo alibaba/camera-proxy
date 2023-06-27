@@ -17,11 +17,11 @@
 - [cameraFOV](CameraAnimatorProps.md#camerafov)
 - [canvasHeight](CameraAnimatorProps.md#canvasheight)
 - [canvasWidth](CameraAnimatorProps.md#canvaswidth)
-- [inert](CameraAnimatorProps.md#inert)
 - [limit](CameraAnimatorProps.md#limit)
 - [onUpdate](CameraAnimatorProps.md#onupdate)
 - [orientation](CameraAnimatorProps.md#orientation)
 - [ratio](CameraAnimatorProps.md#ratio)
+- [stateCodePrecision](CameraAnimatorProps.md#statecodeprecision)
 - [states](CameraAnimatorProps.md#states)
 - [timeline](CameraAnimatorProps.md#timeline)
 
@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[CameraProxy.ts:46](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L46)
+[CameraProxy.ts:46](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L46)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:38](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L38)
+[CameraProxy.ts:38](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L38)
 
 ___
 
@@ -71,17 +71,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:42](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L42)
-
-___
-
-### inert
-
-• `Optional` **inert**: `number` \| `boolean`
-
-#### Defined in
-
-[AnimatedCameraProxy.ts:14](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L14)
+[CameraProxy.ts:42](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L42)
 
 ___
 
@@ -97,7 +87,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:62](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L62)
+[CameraProxy.ts:62](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L62)
 
 ___
 
@@ -127,7 +117,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:66](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L66)
+[CameraProxy.ts:66](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L66)
 
 ___
 
@@ -143,7 +133,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:58](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L58)
+[CameraProxy.ts:58](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L58)
 
 ___
 
@@ -159,7 +149,24 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:54](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L54)
+[CameraProxy.ts:54](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L54)
+
+___
+
+### stateCodePrecision
+
+• `Optional` **stateCodePrecision**: `number`
+
+StateCode 小数点后保留位数
+- 相机状态变化监测依赖于 StateCode 字符串，如果精度不足，会表现为小幅度抖动无效果，或慢速动画卡顿
+
+#### Inherited from
+
+[CameraProxyProps](CameraProxyProps.md).[stateCodePrecision](CameraProxyProps.md#statecodeprecision)
+
+#### Defined in
+
+[CameraProxy.ts:72](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L72)
 
 ___
 
@@ -175,7 +182,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:50](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L50)
+[CameraProxy.ts:50](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L50)
 
 ___
 
@@ -185,4 +192,4 @@ ___
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:13](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L13)
+[AnimatedCameraProxy.ts:13](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L13)

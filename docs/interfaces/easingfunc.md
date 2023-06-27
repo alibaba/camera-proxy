@@ -20,4 +20,4 @@
 
 #### Defined in
 
-[interface.ts:125](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L125)
+[interface.ts:122](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L122)

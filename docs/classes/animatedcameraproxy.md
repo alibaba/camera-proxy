@@ -79,7 +79,7 @@
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:35](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L35)
+[AnimatedCameraProxy.ts:25](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L25)
 
 ## Properties
 
@@ -95,7 +95,7 @@
 
 #### Defined in
 
-[CameraProxy.ts:85](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L85)
+[CameraProxy.ts:91](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L91)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:22](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L22)
+[AnimatedCameraProxy.ts:17](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L17)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:34](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L34)
+[AnimatedCameraProxy.ts:24](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L24)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:101](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L101)
+[CameraProxy.ts:107](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L107)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:96](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L96)
+[CameraProxy.ts:102](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L102)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:27](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L27)
+[AnimatedCameraProxy.ts:19](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L19)
 
 ## Accessors
 
@@ -184,7 +184,7 @@ CameraProxy.aspect
 
 #### Defined in
 
-[CameraProxy.ts:186](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L186)
+[CameraProxy.ts:193](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L193)
 
 ___
 
@@ -204,7 +204,7 @@ CameraProxy.canvasHeight
 
 #### Defined in
 
-[CameraProxy.ts:154](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L154)
+[CameraProxy.ts:161](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L161)
 
 • `set` **canvasHeight**(`value`): `void`
 
@@ -224,7 +224,7 @@ CameraProxy.canvasHeight
 
 #### Defined in
 
-[CameraProxy.ts:157](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L157)
+[CameraProxy.ts:164](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L164)
 
 ___
 
@@ -244,7 +244,7 @@ CameraProxy.center
 
 #### Defined in
 
-[CameraProxy.ts:410](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L410)
+[CameraProxy.ts:409](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L409)
 
 ___
 
@@ -264,7 +264,7 @@ CameraProxy.distance
 
 #### Defined in
 
-[CameraProxy.ts:448](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L448)
+[CameraProxy.ts:447](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L447)
 
 ___
 
@@ -284,7 +284,7 @@ CameraProxy.fov
 
 #### Defined in
 
-[CameraProxy.ts:164](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L164)
+[CameraProxy.ts:171](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L171)
 
 • `set` **fov**(`value`): `void`
 
@@ -304,7 +304,7 @@ CameraProxy.fov
 
 #### Defined in
 
-[CameraProxy.ts:167](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L167)
+[CameraProxy.ts:174](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L174)
 
 ___
 
@@ -324,7 +324,7 @@ CameraProxy.pitch
 
 #### Defined in
 
-[CameraProxy.ts:422](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L422)
+[CameraProxy.ts:421](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L421)
 
 ___
 
@@ -344,7 +344,7 @@ CameraProxy.position
 
 #### Defined in
 
-[CameraProxy.ts:434](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L434)
+[CameraProxy.ts:433](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L433)
 
 ___
 
@@ -364,7 +364,7 @@ CameraProxy.ratio
 
 #### Defined in
 
-[CameraProxy.ts:175](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L175)
+[CameraProxy.ts:182](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L182)
 
 • `set` **ratio**(`value`): `void`
 
@@ -384,7 +384,7 @@ CameraProxy.ratio
 
 #### Defined in
 
-[CameraProxy.ts:178](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L178)
+[CameraProxy.ts:185](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L185)
 
 ___
 
@@ -404,7 +404,7 @@ CameraProxy.rotation
 
 #### Defined in
 
-[CameraProxy.ts:428](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L428)
+[CameraProxy.ts:427](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L427)
 
 ___
 
@@ -425,7 +425,7 @@ CameraProxy.rotationEuler
 
 #### Defined in
 
-[CameraProxy.ts:441](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L441)
+[CameraProxy.ts:440](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L440)
 
 ___
 
@@ -445,7 +445,7 @@ CameraProxy.zoom
 
 #### Defined in
 
-[CameraProxy.ts:416](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L416)
+[CameraProxy.ts:415](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L415)
 
 ## Methods
 
@@ -471,7 +471,7 @@ CameraProxy.zoom
 
 #### Defined in
 
-[CameraProxy.ts:605](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L605)
+[CameraProxy.ts:605](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L605)
 
 ___
 
@@ -491,7 +491,7 @@ ___
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:315](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L315)
+[AnimatedCameraProxy.ts:223](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L223)
 
 ___
 
@@ -517,7 +517,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:543](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L543)
+[CameraProxy.ts:542](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L542)
 
 ___
 
@@ -535,7 +535,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:253](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L253)
+[CameraProxy.ts:260](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L260)
 
 ___
 
@@ -555,7 +555,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:527](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L527)
+[CameraProxy.ts:526](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L526)
 
 ___
 
@@ -585,7 +585,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:561](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L561)
+[CameraProxy.ts:560](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L560)
 
 ___
 
@@ -605,7 +605,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:580](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L580)
+[CameraProxy.ts:579](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L579)
 
 ___
 
@@ -631,7 +631,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:552](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L552)
+[CameraProxy.ts:551](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L551)
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:466](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L466)
+[CameraProxy.ts:465](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L465)
 
 ___
 
@@ -699,7 +699,7 @@ stop {function} 立刻停止缓动动画
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:188](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L188)
+[AnimatedCameraProxy.ts:92](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L92)
 
 ___
 
@@ -725,13 +725,19 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:535](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L535)
+[CameraProxy.ts:534](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L534)
 
 ___
 
 ### setGeographicStatesEase
 
 ▸ **setGeographicStatesEase**(`states`, `duration?`, `easeF?`, `onStart?`, `onEnd?`): () => `void`
+
+地图飞行效果的机位动画
+
+**`Todo`**
+
+移动到 cameraman 类中
 
 #### Parameters
 
@@ -755,7 +761,7 @@ ___
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:226](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L226)
+[AnimatedCameraProxy.ts:134](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L134)
 
 ___
 
@@ -787,7 +793,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:473](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L473)
+[CameraProxy.ts:472](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L472)
 
 ___
 
@@ -821,7 +827,7 @@ stop {function} 立刻停止缓动动画
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:207](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L207)
+[AnimatedCameraProxy.ts:111](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L111)
 
 ___
 
@@ -853,7 +859,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:476](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L476)
+[CameraProxy.ts:475](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L475)
 
 ___
 
@@ -887,7 +893,7 @@ stop {function} 立刻停止缓动动画
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:216](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L216)
+[AnimatedCameraProxy.ts:120](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L120)
 
 ___
 
@@ -913,7 +919,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:570](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L570)
+[CameraProxy.ts:569](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L569)
 
 ___
 
@@ -939,7 +945,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:597](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L597)
+[CameraProxy.ts:597](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L597)
 
 ___
 
@@ -977,7 +983,7 @@ stop {function} 立刻停止缓动动画
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:296](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L296)
+[AnimatedCameraProxy.ts:204](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L204)
 
 ___
 
@@ -1009,7 +1015,7 @@ ___
 
 #### Defined in
 
-[CameraProxy.ts:470](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/CameraProxy.ts#L470)
+[CameraProxy.ts:469](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/CameraProxy.ts#L469)
 
 ___
 
@@ -1043,4 +1049,4 @@ stop {function} 立刻停止缓动动画
 
 #### Defined in
 
-[AnimatedCameraProxy.ts:198](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/AnimatedCameraProxy.ts#L198)
+[AnimatedCameraProxy.ts:102](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/AnimatedCameraProxy.ts#L102)

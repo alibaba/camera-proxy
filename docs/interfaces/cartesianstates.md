@@ -2,6 +2,8 @@
 
 # Interface: CartesianStates
 
+标准笛卡尔坐标系机位
+
 ## Table of contents
 
 ### Properties
@@ -25,7 +27,7 @@
 
 #### Defined in
 
-[interface.ts:50](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L50)
+[interface.ts:52](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L52)
 
 ___
 
@@ -37,7 +39,7 @@ ___
 
 #### Defined in
 
-[interface.ts:35](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L35)
+[interface.ts:37](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L37)
 
 ___
 
@@ -49,4 +51,4 @@ ___
 
 #### Defined in
 
-[interface.ts:40](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L40)
+[interface.ts:42](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L42)

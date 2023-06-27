@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[RemoteSyncer.ts:33](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L33)
+[RemoteSyncer.ts:33](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/RemoteSyncer.ts#L33)
 
 ## Properties
 
@@ -43,7 +43,7 @@
 
 #### Defined in
 
-[RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L28)
+[RemoteSyncer.ts:28](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/RemoteSyncer.ts#L28)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L24)
+[RemoteSyncer.ts:24](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/RemoteSyncer.ts#L24)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L23)
+[RemoteSyncer.ts:23](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/RemoteSyncer.ts#L23)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L25)
+[RemoteSyncer.ts:25](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/RemoteSyncer.ts#L25)
 
 ## Methods
 
@@ -87,4 +87,4 @@ ___
 
 #### Defined in
 
-[RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/RemoteSyncer.ts#L94)
+[RemoteSyncer.ts:94](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/RemoteSyncer.ts#L94)

@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[Cameraman.ts:26](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L26)
+[Cameraman.ts:26](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L26)
 
 ## Properties
 
@@ -45,7 +45,7 @@
 
 #### Defined in
 
-[Cameraman.ts:23](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L23)
+[Cameraman.ts:23](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L23)
 
 ## Methods
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[Cameraman.ts:81](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L81)
+[Cameraman.ts:81](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L81)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[Cameraman.ts:84](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L84)
+[Cameraman.ts:84](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L84)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[Cameraman.ts:33](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L33)
+[Cameraman.ts:33](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L33)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[Cameraman.ts:82](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L82)
+[Cameraman.ts:82](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L82)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[Cameraman.ts:85](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L85)
+[Cameraman.ts:85](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L85)
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[Cameraman.ts:73](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/Cameraman.ts#L73)
+[Cameraman.ts:73](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/Cameraman.ts#L73)

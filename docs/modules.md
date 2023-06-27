@@ -49,7 +49,7 @@
 
 #### Defined in
 
-[interface.ts:56](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L56)
+[interface.ts:55](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L55)
 
 ## Variables
 
@@ -59,7 +59,7 @@
 
 #### Defined in
 
-[interface.ts:113](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L113)
+[interface.ts:110](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L110)
 
 ## Functions
 
@@ -79,7 +79,7 @@
 
 #### Defined in
 
-[interface.ts:77](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L77)
+[interface.ts:76](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L76)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[interface.ts:68](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L68)
+[interface.ts:67](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L67)
 
 ___
 
@@ -124,4 +124,4 @@ sth is GeographicStates
 
 #### Defined in
 
-[interface.ts:61](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L61)
+[interface.ts:60](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L60)

@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[TouchControl.ts:54](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L54)
+[TouchControl.ts:54](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControl.ts#L54)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[TouchControl.ts:39](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L39)
+[TouchControl.ts:39](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControl.ts#L39)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L43)
+[TouchControl.ts:43](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControl.ts#L43)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L52)
+[TouchControl.ts:52](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControl.ts#L52)
 
 ## Methods
 
@@ -82,4 +82,4 @@ ___
 
 #### Defined in
 
-[TouchControl.ts:168](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControl.ts#L168)
+[TouchControl.ts:168](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControl.ts#L168)

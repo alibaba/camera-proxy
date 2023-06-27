@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[TouchControlRotate.ts:16](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L16)
+[TouchControlRotate.ts:16](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L16)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[TouchControlRotate.ts:20](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L20)
+[TouchControlRotate.ts:20](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L20)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[TouchControlRotate.ts:25](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L25)
+[TouchControlRotate.ts:25](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L25)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[TouchControlRotate.ts:32](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L32)
+[TouchControlRotate.ts:32](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L32)
 
 ___
 
@@ -69,4 +69,4 @@ ___
 
 #### Defined in
 
-[TouchControlRotate.ts:30](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/TouchControlRotate.ts#L30)
+[TouchControlRotate.ts:30](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/TouchControlRotate.ts#L30)

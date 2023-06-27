@@ -2,7 +2,7 @@
 
 # Interface: GeographicStates
 
-Copyright (c) 2017 Alibaba Group Holding Limited
+标准地图机位
 
 ## Table of contents
 
@@ -24,7 +24,7 @@ Copyright (c) 2017 Alibaba Group Holding Limited
 
 #### Defined in
 
-[interface.ts:13](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L13)
+[interface.ts:13](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L13)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[interface.ts:18](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L18)
+[interface.ts:18](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L18)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[interface.ts:23](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L23)
+[interface.ts:23](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L23)
 
 ___
 
@@ -62,4 +62,4 @@ ___
 
 #### Defined in
 
-[interface.ts:27](https://github.com/alibaba/camera-proxy/blob/b757eb3/src/interface.ts#L27)
+[interface.ts:27](https://github.com/alibaba/camera-proxy/blob/a1bd6c9/src/interface.ts#L27)
